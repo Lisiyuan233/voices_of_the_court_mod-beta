@@ -25,6 +25,31 @@ talk_background = {
 		reference = "environment_event_garden"		
 	}
 	##########################################
+
+#在此行的下方添加代码块16
+#代码块16示例
+#	texture = {
+#		trigger = {		
+#			OR = {
+#				global_var:talk_scene = flag:talk_scene_"scene_name"
+#				global_var:meet_scene = flag:meet_scene_"scene_name"
+#			}
+#		}
+#		
+#		reference = "scenes/"scene_name".dds"		
+#	}
+#	
+#	environment = {
+#		trigger = {		
+#			OR = {
+#				global_var:talk_scene = flag:talk_scene_"scene_name"
+#				global_var:meet_scene = flag:meet_scene_"scene_name"
+#			}
+#		}
+#		
+#		reference = "environment_event_bedchamber"		
+#	}
+
 	#在黄鹤楼见面	
 
 	texture = {

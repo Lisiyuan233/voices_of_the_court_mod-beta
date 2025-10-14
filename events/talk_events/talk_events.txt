@@ -12,7 +12,25 @@ talk_event.1001 = {
 	left_portrait = {
 		character = scope:recipient
 	}
-		
+	
+	#在此行的下方添加代码块15
+	#代码块15示例
+	#	option ={
+	#	name = talk_scene_"scene_name"_string
+	#	trigger = {can_talk_in_"scene_name" = yes}
+	#	
+	#		set_global_variable = {
+	#			name = talk_scene
+	#			value = flag:talk_scene_"scene_name"
+	#		}
+#
+#	
+#		
+#		
+#		trigger_event = talk_event.9001
+#	}	
+	
+
 	#在黄鹤楼
 
 	option ={
