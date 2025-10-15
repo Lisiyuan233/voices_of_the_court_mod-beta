@@ -96,6 +96,4 @@ decision_group_type = votc_group_type  # 用于归类决策的可折叠分组类
 	ai_will_do = { base = 0 }   # 返回AI执行此决策的概率（0=永不执行，100=必定执行）。
                           # 同时决定玩家的默认选项（若决策有多个选项）
 
-
-  widget = default  # 简化写法：此时gui默认为"decision_view_widget_<controller_type>"
 }
