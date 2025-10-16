@@ -13,7 +13,7 @@ talk_event.1001 = {
 		character = scope:recipient
 	}
 	
-	#在此行的下方添加代码块15
+	#在此段注释的下方添加_代码块15
 	#代码块15示例
 	#	option ={
 	#	name = talk_scene_"scene_name"_string

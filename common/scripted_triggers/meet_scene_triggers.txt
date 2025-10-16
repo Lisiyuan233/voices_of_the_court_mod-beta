@@ -1,7 +1,7 @@
 ﻿#these triggers check if the player can meet with the character in the given scenes. they are used in the character interaction, and in the travel arrival event.
 #triggers for the mutltiple characters conversations
 
-#在此行的下方添加_代码块10
+#在此段注释的下方添加_代码块10
 #代码块10示例
 ##在"sence_name"见面
 #can_meet_in_"sence_name" = {

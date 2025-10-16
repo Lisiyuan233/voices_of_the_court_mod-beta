@@ -14,7 +14,7 @@ mcc_event.1001 = {
 		character = scope:recipient
 	}
 	
-	#在此行的下方添加_代码块12
+	#在此段注释的下方添加_代码块12
 	#代码块12示例
 	#option ={
 	#	name = talk_scene_"sence_name"_string

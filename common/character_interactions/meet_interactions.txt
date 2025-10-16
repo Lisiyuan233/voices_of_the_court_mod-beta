@@ -47,7 +47,7 @@ ckms_meet_interaction = {
 
 
 		#增加
-		#在此行的下方添加_代码块4
+		#在此段注释的下方添加_代码块4
 		#代码块4示例
 		#		if = {
 		#limit = {
@@ -207,7 +207,7 @@ ckms_meet_interaction = {
 		if = {
 			limit = {
 				OR = {
-					#在此行的下方添加_代码块5
+					#在此段注释的下方添加_代码块5
 					#代码块5示例
 					#scope:meet_scene_"sence_name" = yes
 
@@ -253,7 +253,7 @@ ckms_meet_interaction = {
 		
 	}
 
-#在此行的下方添加_代码块6
+#在此段注释的下方添加_代码块6
 	#代码块6示例
 	##场景中文名注释
 	#	send_option = {

@@ -16,7 +16,7 @@ ckms_meet_event.1001 = {
 		character = scope:secondary_recipient
 	}
 
-#在此行的下方添加_代码块13
+#在此段注释的下方添加_代码块13
 #代码块13示例
 #	option ={
 #		name = meet_scene_"scene_name"_string

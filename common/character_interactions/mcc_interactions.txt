@@ -28,8 +28,8 @@ mcc_interaction = {
 	on_accept = {
 
 	#增加
-	#在此行的下方添加_代码块1
-
+	#在此段注释的下方添加_代码块1
+	#代码块1示例
 		#if = {
 		#	limit = {
 		#		scope:talk_scene_"sence_name" = yes
@@ -190,7 +190,7 @@ mcc_interaction = {
 		if = {
 			limit = {
 				OR = {
-					#在此行的下方添加_代码块2
+					#在此段注释的下方添加_代码块2
 					#代码块2示例
 					#scope:talk_scene_"sence_name" = yes
 					
@@ -236,7 +236,7 @@ mcc_interaction = {
 		
 	}
 
-	#在此行的下方添加_代码块3
+	#在此段注释的下方添加_代码块3
 	#代码块3示例
 	##场景中文名注释
 	#	send_option = {

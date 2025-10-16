@@ -30,7 +30,7 @@
 	#set talk_scene global var
 
 	#增加
-	#在此行的下方添加_代码块7
+	#在此段注释的下方添加_代码块7
 	#代码块7示例
 	#		if = {
 	#		limit = {
@@ -190,7 +190,7 @@
 		if = {
 			limit = {
 				OR = {
-					#在此行的下方添加_代码块8
+					#在此段注释的下方添加_代码块8
 					#代码块8示例scope:talk_scene_"sence_name" = yes
 					scope:talk_scene_huanghelou = yes
 					scope:talk_scene_bedchamber_east1 = yes
@@ -233,7 +233,8 @@
 		
 		
 	}
-	#在此行的下方添加_代码块9
+	#在此段注释的下方添加_代码块9
+	#代码块9示例
 	##场景中文名注释
 	#	send_option = {
 	#	is_shown = {can_talk_in_sence_"sence_name" = yes}

@@ -1,6 +1,6 @@
 ﻿#these triggers check if the player can talk with the character in the given scenes. they are used in the character interaction, and in the travel arrival event.
 
-#在此行的下方添加_代码块11
+#在此段注释的下方添加_代码块11
 #代码块11示例
 #can_talk_in_"sence_name" = {
 #	AND = {
