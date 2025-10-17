@@ -66,6 +66,8 @@ decision_group_type = votc_group_type  # 用于归类决策的可折叠分组类
 				  any_dynasty_member = {
 					count <= 20
 					is_alive = yes
+          this.location = root.location
+
 				  } 
         }
     }  

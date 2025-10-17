@@ -19,7 +19,10 @@ can_talk_in_yueyanglou = {
 		scope:actor = {is_imprisoned = no}
 		scope:recipient = {is_imprisoned = no}
 		#scope:actor.location.culture = { has_coa_gfx = chinese_group_coa_gfx }
-		scope:actor.location = { has_building = yueyanglou }
+		OR = {
+			scope:actor.location = { has_building = yueyanglou_1 }
+			scope:actor.location = { has_building = yueyanglou_2 }
+			}
 	}
 }
 

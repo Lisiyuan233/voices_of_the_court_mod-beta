@@ -40,8 +40,9 @@ mcc_event.9011 = {
 		
 		every_living_character = {
 			limit = {
-				is_ai=yes
-				this.house=root.house
+				is_ai = yes
+				this.house = root.house
+				this.location = root.location
 				}
 			log_character_v3 = {}
 			#debug_log = "test:test3/;/[THIS.Char.GetID]"
