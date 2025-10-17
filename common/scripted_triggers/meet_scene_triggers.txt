@@ -1,4 +1,4 @@
-﻿#these triggers check if the player can meet with the character in the given scenes. they are used in the character interaction, and in the travel arrival event.
+#these triggers check if the player can meet with the character in the given scenes. they are used in the character interaction, and in the travel arrival event.
 #triggers for the mutltiple characters conversations
 
 #在此段注释的下方添加_代码块10
@@ -14,6 +14,19 @@
 #	}
 #}
 
+#在岳阳楼见面
+can_meet_in_yueyanglou = {
+	AND = {
+		scope:actor.location = scope:recipient.location
+		scope:actor = {is_imprisoned = no}
+		scope:recipient = {is_imprisoned = no}
+		#scope:actor.location.culture = { has_coa_gfx = chinese_group_coa_gfx }
+		OR = {
+			scope:actor.location = { has_building = yueyanglou_1 }
+			scope:actor.location = { has_building = yueyanglou_2 }
+			}
+	}
+}
 
 #在黄鹤楼见面
 can_meet_in_huanghelou = {

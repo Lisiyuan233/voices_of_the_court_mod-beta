@@ -1,4 +1,4 @@
-﻿namespace = talk_event
+namespace = talk_event
 
 ## 
 ##9000 - 9999 hidden events
@@ -29,7 +29,21 @@ talk_event.1001 = {
 #		
 #		trigger_event = talk_event.9001
 #	}	
-	
+
+	#在岳阳楼
+	option ={
+		name = talk_scene_yueyanglou_string
+		trigger = {can_talk_in_yueyanglou = yes}
+		
+			set_global_variable = {
+				name = talk_scene
+				value = flag:talk_scene_yueyanglou
+			}
+
+		
+		
+		trigger_event = talk_event.9001
+	}	
 
 	#在黄鹤楼
 

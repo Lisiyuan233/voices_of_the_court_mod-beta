@@ -1,4 +1,4 @@
-﻿
+
 
 
 
@@ -58,6 +58,16 @@ ckms_meet_interaction = {
 		#		value = flag:meet_scene_"sence_name"
 		#	}
 		#}
+
+		if = {
+			limit = {
+				scope:meet_scene_yueyanglou = yes
+			}
+			set_global_variable = {
+				name = meet_scene
+				value = flag:meet_scene_yueyanglou
+			}
+		}
 
 		if = {
 			limit = {
@@ -211,6 +221,7 @@ ckms_meet_interaction = {
 					#代码块5示例
 					#scope:meet_scene_"sence_name" = yes
 
+					scope:meet_scene_yueyanglou = yes
 					scope:meet_scene_huanghelou = yes
 					scope:meet_scene_bedchamber_east1 = yes
 					scope:meet_scene_garden_east1 = yes
@@ -262,6 +273,12 @@ ckms_meet_interaction = {
 	#	localization = meet_scene_"sence_name"_string
 	#}
 
+#在岳阳楼
+	send_option = {
+		is_shown = {can_meet_in_yueyanglou = yes}
+		flag = meet_scene_yueyanglou
+		localization = meet_scene_yueyanglou_string
+	}
 
 #在黄鹤楼
 	send_option = {

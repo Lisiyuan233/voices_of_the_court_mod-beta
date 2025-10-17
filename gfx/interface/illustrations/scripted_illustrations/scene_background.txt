@@ -1,4 +1,4 @@
-﻿#datacontext is the talking partner, use the 'talk_first_scope' global variable to scope the player
+#datacontext is the talking partner, use the 'talk_first_scope' global variable to scope the player
 talk_background = {
 	##########################################
 	#家族会议
@@ -47,8 +47,31 @@ talk_background = {
 #			}
 #		}
 #		
-#		reference = "environment_event_bedchamber"		
+#		reference = "environment_event_garden"		
 #	}
+
+	#在岳阳楼见面
+	texture = {
+		trigger = {		
+			OR = {
+				global_var:talk_scene = flag:talk_scene_yueyanglou
+				global_var:meet_scene = flag:meet_scene_yueyanglou
+			}
+		}
+		
+		reference = "scenes/yueyanglou.dds"		
+	}
+	
+	environment = {
+		trigger = {		
+			OR = {
+				global_var:talk_scene = flag:talk_scene_yueyanglou
+				global_var:meet_scene = flag:meet_scene_yueyanglou
+			}
+		}
+		
+		reference = "environment_event_garden"		
+	}
 
 	#在黄鹤楼见面	
 
@@ -71,7 +94,7 @@ talk_background = {
 			}
 		}
 		
-		reference = "environment_event_bedchamber"		
+		reference = "environment_event_garden"		
 	}
 	
 	#在卧室	
@@ -448,6 +471,6 @@ talk_background = {
 		
 		reference = "environment_event_alley"	
 	}
-}	
+}
 	
 

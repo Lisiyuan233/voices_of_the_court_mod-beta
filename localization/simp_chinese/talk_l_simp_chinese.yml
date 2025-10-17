@@ -5,6 +5,12 @@ talk_interaction.desc:0 "开启一个谈话"
 
 talk_herhim:0 "[recipient.GetHerHim]"
 
+#在此段注释的下方添加_代码块17
+#代码块17示例
+#talk_scene_"scene_name"_string:0 "在scene_name见面"
+#meet_scene_"scene_name"_string:0 "在scene_name见面"
+
+meet_scene_yueyanglou_string:0 "在岳阳楼见面"
 meet_scene_huanghelou_string:0 "在黄鹤楼见面"
 meet_scene_bedchamber_east1_string:0 "在卧榻见面"
 meet_scene_garden_east1_string:0 "在御花园见面"
@@ -21,6 +27,7 @@ meet_scene_armycamp_string:0 "在军营中见面"
 meet_scene_hunt_string:0 "在狩猎中见面"
 meet_scene_alley_string:0 "在镇胡同见面"
 
+talk_scene_yueyanglou_string:0 "在岳阳楼见面"
 talk_scene_huanghelou_string:0 "在黄鹤楼见面"
 talk_scene_bedchamber_east1_string:0 "在卧榻见面"
 talk_scene_garden_east1_string:0 "在御花园见面"
