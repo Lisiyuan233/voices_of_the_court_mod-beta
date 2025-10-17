@@ -39,6 +39,15 @@ mcc_interaction = {
 		#		value = flag:talk_scene_"sence_name"
 		#	}
 		#}
+		if = {
+			limit = {
+				scope:talk_scene_tengwangge = yes
+			}
+			set_global_variable = {
+				name = talk_scene
+				value = flag:talk_scene_tengwangge
+			}
+		}
 
 		if = {
 			limit = {
@@ -203,6 +212,7 @@ mcc_interaction = {
 					#在此段注释的下方添加_代码块2
 					#代码块2示例
 					#scope:talk_scene_"sence_name" = yes
+					scope:talk_scene_tengwangge = yes
 					
 					scope:talk_scene_yueyanglou = yes
 					scope:talk_scene_huanghelou = yes
@@ -255,6 +265,12 @@ mcc_interaction = {
 	#	flag = talk_scene_"sence_name"
 	#	localization = talk_scene_"sence_name"_string
 	#}
+	#在滕王阁
+	send_option = {
+		is_shown = {can_talk_in_tengwangge = yes}
+		flag = talk_scene_tengwangge
+		localization = talk_scene_tengwangge_string
+	}
 
 	#在岳阳楼
 	send_option = {

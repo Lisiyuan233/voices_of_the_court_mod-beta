@@ -50,6 +50,29 @@ talk_background = {
 #		reference = "environment_event_garden"		
 #	}
 
+	#在滕王阁见面
+	texture = {
+		trigger = {		
+			OR = {
+				global_var:talk_scene = flag:talk_scene_tengwangge
+				global_var:meet_scene = flag:meet_scene_tengwangge
+			}
+		}
+		
+		reference = "scenes/tengwangge.dds"		
+	}
+	
+	environment = {
+		trigger = {		
+			OR = {
+				global_var:talk_scene = flag:talk_scene_tengwangge
+				global_var:meet_scene = flag:meet_scene_tengwangge
+			}
+		}
+		
+		reference = "environment_event_garden"		
+	}
+
 	#在岳阳楼见面
 	texture = {
 		trigger = {		

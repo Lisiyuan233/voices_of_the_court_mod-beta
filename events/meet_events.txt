@@ -27,7 +27,19 @@ ckms_meet_event.1001 = {
 #				value = flag:meet_scene_"scene_name"
 #			}
 #		trigger_event = talk_event.9001
-#	}	
+#	}
+
+	#在滕王阁
+	option ={
+		name = meet_scene_tengwangge_string
+		trigger = {can_meet_in_tengwangge = yes}
+		
+			set_global_variable = {
+				name = meet_scene
+				value = flag:meet_scene_tengwangge
+			}
+		trigger_event = talk_event.9001
+	}	
 
 	#在岳阳楼
 	option ={

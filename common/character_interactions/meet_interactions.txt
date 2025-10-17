@@ -58,6 +58,15 @@ ckms_meet_interaction = {
 		#		value = flag:meet_scene_"sence_name"
 		#	}
 		#}
+		if = {
+			limit = {
+				scope:meet_scene_tengwangge = yes
+			}
+			set_global_variable = {
+				name = meet_scene
+				value = flag:meet_scene_tengwangge
+			}
+		}
 
 		if = {
 			limit = {
@@ -220,6 +229,7 @@ ckms_meet_interaction = {
 					#在此段注释的下方添加_代码块5
 					#代码块5示例
 					#scope:meet_scene_"sence_name" = yes
+					scope:meet_scene_tengwangge = yes
 
 					scope:meet_scene_yueyanglou = yes
 					scope:meet_scene_huanghelou = yes
@@ -272,6 +282,12 @@ ckms_meet_interaction = {
 	#	flag = meet_scene_"sence_name"
 	#	localization = meet_scene_"sence_name"_string
 	#}
+#在滕王阁
+	send_option = {
+		is_shown = {can_meet_in_tengwangge = yes}
+		flag = meet_scene_tengwangge
+		localization = meet_scene_tengwangge_string
+	}
 
 #在岳阳楼
 	send_option = {
