@@ -50,6 +50,29 @@ talk_background = {
 #		reference = "environment_event_garden"		
 #	}
 
+	#在泰山见面
+	texture = {
+		trigger = {		
+			OR = {
+				global_var:talk_scene = flag:talk_scene_taishan
+				global_var:meet_scene = flag:meet_scene_taishan
+			}
+		}
+		
+		reference = "scenes/taishan.dds"		
+	}
+	
+	environment = {
+		trigger = {		
+			OR = {
+				global_var:talk_scene = flag:talk_scene_taishan
+				global_var:meet_scene = flag:meet_scene_taishan
+			}
+		}
+		
+		reference = "environment_event_garden"		
+	}
+
 	#在武陵源见面
 	texture = {
 		trigger = {		

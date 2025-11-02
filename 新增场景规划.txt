@@ -36,7 +36,7 @@ mod
 1.大相国寺 daxiangguoshi
 daxiangguo_temple_01
 
-2.泰山 mount_tai_01
+2.泰山 mount_tai_01 √
 
 
 

@@ -7,9 +7,19 @@
 #		scope:actor.location = scope:recipient.location
 #		scope:actor = {is_imprisoned = no}
 #		scope:recipient = {is_imprisoned = no}
-#		scope:actor.location = { has_building = "sence_name" }
+#		scope:actor.location = { has_building = "building_name" }
 #	}
 #}
+
+#在泰山见面
+can_talk_in_taishan = {
+	AND = {
+		scope:actor.location = scope:recipient.location
+		scope:actor = {is_imprisoned = no}
+		scope:recipient = {is_imprisoned = no}
+		scope:actor.location = { has_building = mount_tai_01 }
+	}
+}
 
 #在武陵源见面
 can_talk_in_wulingyuan = {

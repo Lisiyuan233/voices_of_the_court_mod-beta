@@ -43,6 +43,15 @@ talk_interaction = {
 	#	}
 		if = {
 			limit = {
+				scope:talk_scene_taishan = yes
+			}
+			set_global_variable = {
+				name = talk_scene
+				value = flag:talk_scene_taishan
+			}
+		}
+		if = {
+			limit = {
 				scope:talk_scene_wulingyuan = yes
 			}
 			set_global_variable = {
@@ -229,6 +238,7 @@ talk_interaction = {
 				OR = {
 					#在此段注释的下方添加_代码块8
 					#代码块8示例scope:talk_scene_"sence_name" = yes
+					scope:talk_scene_taishan = yes
 					scope:talk_scene_wulingyuan = yes
 					scope:talk_scene_kaifenghuangcheng = yes
 					scope:talk_scene_tengwangge = yes
@@ -282,6 +292,12 @@ talk_interaction = {
 	#	flag = talk_scene_"sence_name"
 	#	localization = talk_scene_"sence_name"_string
 	#}
+	#在泰山
+	send_option = {
+		is_shown = {can_talk_in_taishan = yes}
+		flag = talk_scene_taishan
+		localization = talk_scene_taishan_string
+	}
 	#在武陵源
 	send_option = {
 		is_shown = {can_talk_in_wulingyuan = yes}

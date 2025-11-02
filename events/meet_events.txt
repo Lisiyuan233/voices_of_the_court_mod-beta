@@ -29,6 +29,18 @@ ckms_meet_event.1001 = {
 #		trigger_event = talk_event.9001
 #	}
 
+	#在泰山
+	option ={
+		name = meet_scene_taishan_string
+		trigger = {can_meet_in_taishan = yes}
+		
+			set_global_variable = {
+				name = meet_scene
+				value = flag:meet_scene_taishan
+			}
+		trigger_event = talk_event.9001
+	}
+
 	#在武陵源
 	option ={
 		name = meet_scene_wulingyuan_string
