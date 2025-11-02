@@ -11,6 +11,16 @@
 #	}
 #}
 
+#在乐山大佛见面
+can_talk_in_leshandafou = {
+	AND = {
+		scope:actor.location = scope:recipient.location
+		scope:actor = {is_imprisoned = no}
+		scope:recipient = {is_imprisoned = no}
+		scope:actor.location = { has_building = leshan_giant_buddha_01 }
+	}
+}
+
 #在泰山见面
 can_talk_in_taishan = {
 	AND = {

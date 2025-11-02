@@ -58,6 +58,16 @@ ckms_meet_interaction = {
 		#		value = flag:meet_scene_"sence_name"
 		#	}
 		#}
+		#在乐山大佛
+		if = {
+			limit = {
+				scope:meet_scene_leshandafou = yes
+			}
+			set_global_variable = {
+				name = meet_scene
+				value = flag:meet_scene_leshandafou
+			}
+		}
 		if = {
 			limit = {
 				scope:meet_scene_taishan = yes
@@ -256,6 +266,7 @@ ckms_meet_interaction = {
 					#在此段注释的下方添加_代码块5
 					#代码块5示例
 					#scope:meet_scene_"sence_name" = yes
+					scope:meet_scene_leshandafou = yes
 					scope:meet_scene_taishan = yes
 					scope:meet_scene_wulingyuan = yes
 					scope:meet_scene_kaifenghuangcheng = yes
@@ -269,7 +280,7 @@ ckms_meet_interaction = {
 					scope:meet_scene_throneroom_east_fuya1 = yes
 					scope:meet_scene_throneroom_east_empire1 = yes	
 					scope:meet_scene_throneroom_east_empire = yes	
-					#上方增加						
+					#上方增加					
 					scope:meet_scene_throneroom = yes
 					scope:meet_scene_garden = yes
 					scope:meet_scene_bedchamber = yes
@@ -312,6 +323,12 @@ ckms_meet_interaction = {
 	#	flag = meet_scene_"sence_name"
 	#	localization = meet_scene_"sence_name"_string
 	#}
+#在乐山大佛
+	send_option = {
+		is_shown = {can_meet_in_leshandafou = yes}
+		flag = meet_scene_leshandafou
+		localization = meet_scene_leshandafou_string
+	}
 #在泰山
 	send_option = {
 		is_shown = {can_meet_in_taishan = yes}

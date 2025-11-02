@@ -29,6 +29,18 @@ ckms_meet_event.1001 = {
 #		trigger_event = talk_event.9001
 #	}
 
+	#在乐山大佛
+	option ={
+		name = meet_scene_leshandafou_string
+		trigger = {can_meet_in_leshandafou = yes}
+		
+			set_global_variable = {
+				name = meet_scene
+				value = flag:meet_scene_leshandafou
+			}
+		trigger_event = talk_event.9001
+	}
+
 	#在泰山
 	option ={
 		name = meet_scene_taishan_string

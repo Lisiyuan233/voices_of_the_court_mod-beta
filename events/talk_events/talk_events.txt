@@ -14,21 +14,36 @@ talk_event.1001 = {
 	}
 	
 	#在此段注释的下方添加_代码块15
-	#代码块15示例
-	#	option ={
-	#	name = talk_scene_"scene_name"_string
-	#	trigger = {can_talk_in_"scene_name" = yes}
-	#	
-	#		set_global_variable = {
-	#			name = talk_scene
-	#			value = flag:talk_scene_"scene_name"
-	#		}
+#代码块15示例
+#	option ={
+#	name = talk_scene_"scene_name"_string
+#	trigger = {can_talk_in_"scene_name" = yes}
+#	
+#		set_global_variable = {
+#			name = talk_scene
+#			value = flag:talk_scene_"scene_name"
+#		}
 #
 #	
-#		
-#		
-#		trigger_event = talk_event.9001
-	#}
+#	
+#	
+#	trigger_event = talk_event.9001
+#	}
+
+	#在乐山大佛
+	option ={
+		name = talk_scene_leshandafou_string
+		trigger = {can_talk_in_leshandafou = yes}
+		
+			set_global_variable = {
+				name = talk_scene
+				value = flag:talk_scene_leshandafou
+			}
+
+		
+		
+		trigger_event = talk_event.9001
+	}
 
 	#在泰山
 	option ={

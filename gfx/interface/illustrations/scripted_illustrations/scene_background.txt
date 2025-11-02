@@ -50,6 +50,29 @@ talk_background = {
 #		reference = "environment_event_garden"		
 #	}
 
+	#在乐山大佛见面
+	texture = {
+		trigger = {		
+			OR = {
+				global_var:talk_scene = flag:talk_scene_leshandafou
+				global_var:meet_scene = flag:meet_scene_leshandafou
+			}
+		}
+		
+		reference = "scenes/leshandafou.dds"		
+	}
+	
+	environment = {
+		trigger = {		
+			OR = {
+				global_var:talk_scene = flag:talk_scene_leshandafou
+				global_var:meet_scene = flag:meet_scene_leshandafou
+			}
+		}
+		
+		reference = "environment_event_garden"		
+	}
+
 	#在泰山见面
 	texture = {
 		trigger = {		
