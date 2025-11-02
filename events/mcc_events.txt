@@ -98,10 +98,22 @@ mcc_event.1001 = {
 	option ={
 		name = talk_scene_huanghelou_string
 		trigger = {can_talk_in_huanghelou = yes}
-		
+	
 			set_global_variable = {
 				name = talk_scene
 				value = flag:talk_scene_huanghelou
+			}
+		trigger_event = talk_event.9001
+	}	
+	
+	#在云冈石窟
+	option ={
+		name = talk_scene_yungangshiku_string
+		trigger = {can_talk_in_yungangshiku = yes}
+	
+			set_global_variable = {
+				name = talk_scene
+				value = flag:talk_scene_yungangshiku
 			}
 		trigger_event = talk_event.9001
 	}	

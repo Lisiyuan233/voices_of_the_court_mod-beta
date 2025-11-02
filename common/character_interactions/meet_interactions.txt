@@ -51,13 +51,23 @@ ckms_meet_interaction = {
 		#代码块4示例
 		#		if = {
 		#limit = {
-		#		scope:meet_scene_"sence_name" = yes
-		#	}
-		#	set_global_variable = {
-		#		name = meet_scene
-		#		value = flag:meet_scene_"sence_name"
-		#	}
+		#			scope:meet_scene_"sence_name" = yes
+		#		}
+		#		set_global_variable = {
+		#			name = meet_scene
+		#			value = flag:meet_scene_"sence_name"
+		#		}
 		#}
+		#在云冈石窟
+		if = {
+			limit = {
+				scope:meet_scene_yungangshiku = yes
+			}
+			set_global_variable = {
+				name = meet_scene
+				value = flag:meet_scene_yungangshiku
+			}
+		}
 		#在乐山大佛
 		if = {
 			limit = {
@@ -274,6 +284,7 @@ ckms_meet_interaction = {
 
 					scope:meet_scene_yueyanglou = yes
 					scope:meet_scene_huanghelou = yes
+					scope:meet_scene_yungangshiku = yes
 					scope:meet_scene_bedchamber_east1 = yes
 					scope:meet_scene_garden_east1 = yes
 					scope:meet_scene_throneroom_east_fuya = yes	
@@ -412,6 +423,12 @@ ckms_meet_interaction = {
 		is_shown = {can_meet_in_throneroom_east_empire1 = yes}
 		flag = meet_scene_throneroom_east_empire1
 		localization = meet_scene_throneroom_east_empire1_string
+	}
+	#在云冈石窟
+	send_option = {
+		is_shown = {can_meet_in_yungangshiku = yes}
+		flag = meet_scene_yungangshiku
+		localization = meet_scene_yungangshiku_string
 	}
 
 	send_option = {

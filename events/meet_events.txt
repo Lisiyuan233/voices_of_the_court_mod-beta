@@ -105,10 +105,22 @@ ckms_meet_event.1001 = {
 	option ={
 		name = meet_scene_huanghelou_string
 		trigger = {can_meet_in_huanghelou = yes}
-		
+	
 			set_global_variable = {
 				name = meet_scene
 				value = flag:meet_scene_huanghelou
+			}
+		trigger_event = talk_event.9001
+	}	
+	
+	#在云冈石窟
+	option ={
+		name = meet_scene_yungangshiku_string
+		trigger = {can_meet_in_yungangshiku = yes}
+	
+			set_global_variable = {
+				name = meet_scene
+				value = flag:meet_scene_yungangshiku
 			}
 		trigger_event = talk_event.9001
 	}	

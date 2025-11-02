@@ -111,6 +111,20 @@ invite_to_talk_event.1003 = {
 		trigger_event = talk_event.9001
 	}
 
+#云冈石窟
+	option ={
+		name = talk_scene_yungangshiku_string
+		
+		
+		trigger = {can_talk_in_yungangshiku = yes}
+		
+		set_global_variable = {
+			name = talk_scene
+			value = flag:talk_scene_yungangshiku
+		}
+		trigger_event = talk_event.9001
+	}
+
 #在此段注释的下方添加_代码块14
 #代码块14示例
 #	option ={

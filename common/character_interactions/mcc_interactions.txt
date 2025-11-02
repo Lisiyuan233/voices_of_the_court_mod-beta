@@ -39,6 +39,16 @@ mcc_interaction = {
 		#		value = flag:talk_scene_"sence_name"
 		#	}
 		#}
+		#在云冈石窟
+		if = {
+			limit = {
+				scope:talk_scene_yungangshiku = yes
+			}
+			set_global_variable = {
+				name = talk_scene
+				value = flag:talk_scene_yungangshiku
+			}
+		}
 		#在乐山大佛
 		if = {
 			limit = {
@@ -257,6 +267,7 @@ mcc_interaction = {
 					
 					scope:talk_scene_yueyanglou = yes
 					scope:talk_scene_huanghelou = yes
+					scope:talk_scene_yungangshiku = yes
 					scope:talk_scene_bedchamber_east1 = yes
 					scope:talk_scene_garden_east1 = yes
 					scope:talk_scene_throneroom_east_fuya = yes	
@@ -395,6 +406,12 @@ mcc_interaction = {
 		is_shown = {can_talk_in_throneroom_east_empire1 = yes}
 		flag = talk_scene_throneroom_east_empire1
 		localization = talk_scene_throneroom_east_empire1_string
+	}
+	#在云冈石窟
+	send_option = {
+		is_shown = {can_talk_in_yungangshiku = yes}
+		flag = talk_scene_yungangshiku
+		localization = talk_scene_yungangshiku_string
 	}
 	##############################################
 	send_option = {

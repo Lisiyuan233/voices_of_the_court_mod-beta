@@ -41,6 +41,16 @@ talk_interaction = {
 	#			value = flag:talk_scene_"sence_name"
 	#		}
 	#	}
+		#在云冈石窟
+		if = {
+			limit = {
+				scope:talk_scene_yungangshiku = yes
+			}
+			set_global_variable = {
+				name = talk_scene
+				value = flag:talk_scene_yungangshiku
+			}
+		}
 		#在乐山大佛
 		if = {
 			limit = {
@@ -248,6 +258,7 @@ talk_interaction = {
 				OR = {
 					#在此段注释的下方添加_代码块8
 					#代码块8示例scope:talk_scene_"sence_name" = yes
+					scope:talk_scene_yungangshiku = yes
 					scope:talk_scene_leshandafou = yes
 					scope:talk_scene_taishan = yes
 					scope:talk_scene_wulingyuan = yes
@@ -346,6 +357,12 @@ talk_interaction = {
 		is_shown = {can_talk_in_huanghelou = yes}
 		flag = talk_scene_huanghelou
 		localization = talk_scene_huanghelou_string
+	}
+	#在云冈石窟
+	send_option = {
+		is_shown = {can_talk_in_yungangshiku = yes}
+		flag = talk_scene_yungangshiku
+		localization = talk_scene_yungangshiku_string
 	}
 	#在卧室
 	send_option = {

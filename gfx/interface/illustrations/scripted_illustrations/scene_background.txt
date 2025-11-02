@@ -204,8 +204,31 @@ talk_background = {
 	environment = {
 		trigger = {		
 			OR = {
-				global_var:talk_scene = flag:talk_scene_bedchamber
-				global_var:meet_scene = flag:meet_scene_bedchamber
+				global_var:talk_scene = flag:talk_scene_huanghelou
+				global_var:meet_scene = flag:meet_scene_huanghelou
+			}
+		}
+		
+		reference = "environment_event_garden"		
+	}
+
+#在云冈石窟见面
+	texture = {
+		trigger = {		
+			OR = {
+				global_var:talk_scene = flag:talk_scene_yungangshiku
+				global_var:meet_scene = flag:meet_scene_yungangshiku
+			}
+		}
+		
+		reference = "scenes/yungangshiku.dds"		
+	}
+	
+	environment = {
+		trigger = {		
+			OR = {
+				global_var:talk_scene = flag:talk_scene_yungangshiku
+				global_var:meet_scene = flag:meet_scene_yungangshiku
 			}
 		}
 		
