@@ -179,7 +179,7 @@ can_meet_in_throneroom_east_empire = {
 			}
 			
 		}
-		scope:recipient = {highest_held_title_tier = tier_empire}
+		scope:recipient = {highest_held_title_tier >= tier_empire}
 		scope:recipient.culture = { has_coa_gfx = chinese_group_coa_gfx }
 		scope:actor.location = scope:recipient.location
 		scope:actor = {is_imprisoned = no}
@@ -198,7 +198,7 @@ can_meet_in_throneroom_east_empire1 = {
 			}
 			
 		}
-		scope:actor = {highest_held_title_tier = tier_empire}
+		scope:actor = {highest_held_title_tier >= tier_empire}
 		scope:actor.culture = { has_coa_gfx = chinese_group_coa_gfx }
 		scope:actor.location = scope:recipient.location
 		scope:actor = {is_imprisoned = no}
