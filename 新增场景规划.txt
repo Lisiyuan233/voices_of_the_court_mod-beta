@@ -1,0 +1,46 @@
+原版：
+1.开封皇城 kaifenghuangcheng
+kaifeng_palace_01
+3.武陵源 wulingyuan
+wulingyuan_01
+4.乐山大佛 leshandafou
+leshan_giant_buddha_01
+5.yungang_grottoes_01: "云冈石窟"
+6.wudang_mountain_temples_01: "武当山道观"
+7.shaolin_monastery_01: "少林寺"
+8.lingyin_temple_01: "灵隐寺"
+9.giant_wild_goose_pagoda_01: "大雁塔"
+10.forbidden_city_01: "紫禁城"
+11.qianling_mausoleum_01: "乾陵"
+12.quanzhou_seaport_01: "泉州港"
+13.angkor_wat_01: "吴哥窟"
+14. the_great_wall_01: "长城"
+	the_great_wall_02: "长城"
+	the_great_wall_03: "长城"
+	the_great_wall_04: "长城"
+15. changan_market_01: "长安市集"
+ 	changan_market_02: "长安繁盛市集"
+16. type_mount_fuji_01: "富士山"
+17. examination_hall_02: "文武庙"
+18. examination_hall_03: "官学"
+19. itsukushima_jinja_01: "严岛神社" #厳島神社
+20. heian_palace_01: "平安宫" #平安宮
+21. white_deer_grotto_academy_01: "白鹿洞书院"
+22. shigu_academy_01: "石鼓书院"
+22. culai_academy_01: "徂徕书院"
+23. lize_academy_01: "丽泽书院"
+24. maoshan_academy_01: "茅山书院"
+25. type_mount_baekdu_01: "白头山"
+
+mod
+1.大相国寺 daxiangguoshi
+daxiangguo_temple_01
+
+
+
+
+
+
+
+
+

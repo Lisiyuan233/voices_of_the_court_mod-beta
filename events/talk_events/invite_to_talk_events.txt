@@ -126,6 +126,20 @@ invite_to_talk_event.1003 = {
 #		trigger_event = talk_event.9001
 #	}
 
+	#在开封皇城
+	option ={
+		name = talk_scene_kaifenghuangcheng_string
+		
+		
+		trigger = {can_talk_in_kaifenghuangcheng = yes}
+		
+		set_global_variable = {
+			name = talk_scene
+			value = flag:talk_scene_kaifenghuangcheng
+		}
+		trigger_event = talk_event.9001
+	}
+
 	#在滕王阁
 	option ={
 		name = talk_scene_tengwangge_string

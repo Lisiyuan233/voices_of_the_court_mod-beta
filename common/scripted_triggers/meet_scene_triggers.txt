@@ -9,10 +9,19 @@
 #		scope:actor.location = scope:recipient.location
 #		scope:actor = {is_imprisoned = no}
 #		scope:recipient = {is_imprisoned = no}
-#		#scope:actor.location.culture = { has_coa_gfx = chinese_group_coa_gfx }
-#		scope:actor.location = { has_building = "sence_name" }
+#		scope:actor.location = { has_building = "building_name" }
 #	}
 #}
+
+#在开封皇城见面
+can_meet_in_kaifenghuangcheng = {
+	AND = {
+		scope:actor.location = scope:recipient.location
+		scope:actor = {is_imprisoned = no}
+		scope:recipient = {is_imprisoned = no}
+		scope:actor.location = { has_building = kaifeng_palace_01 }
+	}
+}
 
 #在滕王阁见面
 can_meet_in_tengwangge = {
@@ -21,7 +30,10 @@ can_meet_in_tengwangge = {
 		scope:actor = {is_imprisoned = no}
 		scope:recipient = {is_imprisoned = no}
 		#scope:actor.location.culture = { has_coa_gfx = chinese_group_coa_gfx }
-		scope:actor.location = { has_building = tengwangge }
+		OR = {
+			scope:actor.location = { has_building = tengwangge }
+			scope:actor.location = { has_building = prince_teng_pavilion_01 }
+		}
 	}
 }
 

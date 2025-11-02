@@ -29,6 +29,18 @@ ckms_meet_event.1001 = {
 #		trigger_event = talk_event.9001
 #	}
 
+	#在开封皇城
+	option ={
+		name = meet_scene_kaifenghuangcheng_string
+		trigger = {can_meet_in_kaifenghuangcheng = yes}
+		
+			set_global_variable = {
+				name = meet_scene
+				value = flag:meet_scene_kaifenghuangcheng
+			}
+		trigger_event = talk_event.9001
+	}
+
 	#在滕王阁
 	option ={
 		name = meet_scene_tengwangge_string
