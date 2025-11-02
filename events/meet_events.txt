@@ -29,6 +29,18 @@ ckms_meet_event.1001 = {
 #		trigger_event = talk_event.9001
 #	}
 
+	#在武陵源
+	option ={
+		name = meet_scene_wulingyuan_string
+		trigger = {can_meet_in_wulingyuan = yes}
+		
+			set_global_variable = {
+				name = meet_scene
+				value = flag:meet_scene_wulingyuan
+			}
+		trigger_event = talk_event.9001
+	}
+
 	#在开封皇城
 	option ={
 		name = meet_scene_kaifenghuangcheng_string

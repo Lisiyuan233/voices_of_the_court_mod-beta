@@ -10,6 +10,9 @@ talk_herhim:0 "[recipient.GetHerHim]"
 #talk_scene_"scene_name"_string:0 "在scene_name见面"
 #meet_scene_"scene_name"_string:0 "在scene_name见面"
 
+talk_scene_wulingyuan_string:0 "在武陵源见面"
+meet_scene_wulingyuan_string:0 "在武陵源见面"
+
 talk_scene_kaifenghuangcheng_string:0 "在开封皇城见面"
 meet_scene_kaifenghuangcheng_string:0 "在开封皇城见面"
 
@@ -18,7 +21,7 @@ meet_scene_tengwangge_string:0 "在滕王阁见面"
 
 meet_scene_yueyanglou_string:0 "在岳阳楼见面"
 meet_scene_huanghelou_string:0 "在黄鹤楼见面"
-meet_scene_bedchamber_east1_string:0 "在卧榻见面"
+meet_scene_bedchamber_east1_string:0 "在卧室见面"
 meet_scene_garden_east1_string:0 "在御花园见面"
 meet_scene_throneroom_east_fuya1_string:0 "在府衙接见"
 meet_scene_throneroom_east_fuya_string:0 "在府衙拜见"

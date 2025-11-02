@@ -50,6 +50,29 @@ talk_background = {
 #		reference = "environment_event_garden"		
 #	}
 
+	#在武陵源见面
+	texture = {
+		trigger = {		
+			OR = {
+				global_var:talk_scene = flag:talk_scene_wulingyuan
+				global_var:meet_scene = flag:meet_scene_wulingyuan
+			}
+		}
+		
+		reference = "scenes/wulingyuan.dds"		
+	}
+	
+	environment = {
+		trigger = {		
+			OR = {
+				global_var:talk_scene = flag:talk_scene_wulingyuan
+				global_var:meet_scene = flag:meet_scene_wulingyuan
+			}
+		}
+		
+		reference = "environment_event_garden"		
+	}
+
 	#在开封皇城见面
 	texture = {
 		trigger = {		

@@ -9,9 +9,19 @@
 #		scope:actor.location = scope:recipient.location
 #		scope:actor = {is_imprisoned = no}
 #		scope:recipient = {is_imprisoned = no}
-#		scope:actor.location = { has_building = "building_name" }
+#		scope:actor.location = { has_building = "sence_name" }.
 #	}
 #}
+
+#在武陵源见面
+can_meet_in_wulingyuan = {
+	AND = {
+		scope:actor.location = scope:recipient.location
+		scope:actor = {is_imprisoned = no}
+		scope:recipient = {is_imprisoned = no}
+		scope:actor.location = { has_building = wulingyuan_01 }
+	}
+}
 
 #在开封皇城见面
 can_meet_in_kaifenghuangcheng = {

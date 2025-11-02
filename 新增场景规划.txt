@@ -1,7 +1,7 @@
 原版：
-1.开封皇城 kaifenghuangcheng
+1.开封皇城 kaifenghuangcheng √
 kaifeng_palace_01
-3.武陵源 wulingyuan
+3.武陵源 wulingyuan √
 wulingyuan_01
 4.乐山大佛 leshandafou
 leshan_giant_buddha_01
@@ -35,6 +35,8 @@ leshan_giant_buddha_01
 mod
 1.大相国寺 daxiangguoshi
 daxiangguo_temple_01
+
+2.泰山 mount_tai_01
 
 
 

@@ -60,6 +60,15 @@ ckms_meet_interaction = {
 		#}
 		if = {
 			limit = {
+				scope:meet_scene_wulingyuan = yes
+			}
+			set_global_variable = {
+				name = meet_scene
+				value = flag:meet_scene_wulingyuan
+			}
+		}
+		if = {
+			limit = {
 				scope:meet_scene_kaifenghuangcheng = yes
 			}
 			set_global_variable = {
@@ -238,6 +247,7 @@ ckms_meet_interaction = {
 					#在此段注释的下方添加_代码块5
 					#代码块5示例
 					#scope:meet_scene_"sence_name" = yes
+					scope:meet_scene_wulingyuan = yes
 					scope:meet_scene_kaifenghuangcheng = yes
 					scope:meet_scene_tengwangge = yes
 
@@ -292,6 +302,12 @@ ckms_meet_interaction = {
 	#	flag = meet_scene_"sence_name"
 	#	localization = meet_scene_"sence_name"_string
 	#}
+#在武陵源
+	send_option = {
+		is_shown = {can_meet_in_wulingyuan = yes}
+		flag = meet_scene_wulingyuan
+		localization = meet_scene_wulingyuan_string
+	}
 #在开封皇城
 	send_option = {
 		is_shown = {can_meet_in_kaifenghuangcheng = yes}
