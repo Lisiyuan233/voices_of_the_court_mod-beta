@@ -102,11 +102,11 @@ votc_family_decision_confirm:0 "召开家族会议"
 votc_family_decision_effect:0 "你将召开一场家族会议"
 famliy_member_too_much:0 "家族成员过多（大于20）"
 
-votc_cabinet_decision_tooltip:0 "内阁会议"  # 从决策列表中选中决策时显示的提示文本。
+votc_cabinet_decision_tooltip:0 "内阁会议" 
 votc_cabinet_decision_desc:0 "召开一场内阁会议，所有与你在同一地点的内阁成员都会参加"
 votc_cabinet_decision_confirm:0 "召开内阁会议"
 votc_cabinet_decision_effect:0 "你将召开一场内阁会议"
-not_enough_cabinet_member:0 "你需要至少2个内阁成员与你在同一地点"
+not_enough_cabinet_member:0 "需要至少2个内阁成员与你在同一地点"
 votc_chinese_empire_cabinet_decision_desc:0 "你将召开一场中枢会议"
 votc_cabinet_decision:0 "内阁会议"
 
