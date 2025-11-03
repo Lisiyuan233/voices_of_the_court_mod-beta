@@ -140,6 +140,20 @@ invite_to_talk_event.1003 = {
 #		trigger_event = talk_event.9001
 #	}
 
+	#在日本皇宫
+	option ={
+		name = talk_scene_throneroom_japan_string
+		
+		
+		trigger = {can_talk_in_throneroom_japan = yes}
+		
+		set_global_variable = {
+			name = talk_scene
+			value = flag:talk_scene_throneroom_japan
+		}
+		trigger_event = talk_event.9001
+	}
+
 	#在少林寺
 	option ={
 		name = talk_scene_shaolinsi_string

@@ -13,6 +13,16 @@
 #	}
 #}
 
+#在日本皇宫见面
+can_meet_in_throneroom_japan = {
+	AND = {
+		scope:actor.location = scope:recipient.location
+		scope:actor = {is_imprisoned = no}
+		scope:recipient = {is_imprisoned = no}
+		scope:actor.location = { has_building = heian_palace_01 }
+	}
+}
+
 #在少林寺见面
 can_meet_in_shaolinsi = {
 	AND = {

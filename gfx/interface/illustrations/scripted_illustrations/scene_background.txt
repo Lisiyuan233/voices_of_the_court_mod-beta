@@ -50,6 +50,29 @@ talk_background = {
 #		reference = "environment_event_garden"		
 #	}
 
+	#在日本皇宫见面
+	texture = {
+		trigger = {		
+			OR = {
+				global_var:talk_scene = flag:talk_scene_throneroom_japan
+				global_var:meet_scene = flag:meet_scene_throneroom_japan
+			}
+		}
+		
+		reference = "scenes/tgp_frontend_japan.dds"		
+	}
+	
+	environment = {
+		trigger = {		
+			OR = {
+				global_var:talk_scene = flag:talk_scene_throneroom_japan
+				global_var:meet_scene = flag:meet_scene_throneroom_japan
+			}
+		}
+		
+		reference = "environment_event_garden"		
+	}
+
 	#在少林寺见面
 	texture = {
 		trigger = {		
