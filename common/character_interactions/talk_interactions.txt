@@ -41,6 +41,16 @@ talk_interaction = {
 	#			value = flag:talk_scene_"sence_name"
 	#		}
 	#	}
+	#在灵隐寺
+	if = {
+		limit = {
+			scope:talk_scene_lingyinsi = yes
+		}
+		set_global_variable = {
+			name = talk_scene
+			value = flag:talk_scene_lingyinsi
+		}
+	}
 	#在日本皇宫
 		if = {
 			limit = {
@@ -288,6 +298,7 @@ talk_interaction = {
 				OR = {
 					#在此段注释的下方添加_代码块8
 					#代码块8示例scope:talk_scene_"sence_name" = yes
+					scope:talk_scene_lingyinsi = yes
 					scope:talk_scene_throneroom_japan = yes
 					scope:talk_scene_shaolinsi = yes
 					scope:talk_scene_wudangshandaoguan = yes
@@ -347,6 +358,12 @@ talk_interaction = {
 	#	flag = talk_scene_"sence_name"
 	#	localization = talk_scene_"sence_name"_string
 	#}
+	#在灵隐寺
+	send_option = {
+		is_shown = {can_talk_in_lingyinsi = yes}
+		flag = talk_scene_lingyinsi
+		localization = talk_scene_lingyinsi_string
+	}
 	#在日本皇宫
 	send_option = {
 		is_shown = {can_talk_in_throneroom_japan = yes}

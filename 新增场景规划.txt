@@ -24,7 +24,7 @@ leshan_giant_buddha_01
 17. examination_hall_02: "文武庙"
 18. examination_hall_03: "官学"
 19. itsukushima_jinja_01: "严岛神社" #厳島神社
-20. heian_palace_01: "平安宫" #平安宮
+20. heian_palace_01: "平安宫" √
 21. white_deer_grotto_academy_01: "白鹿洞书院"
 22. shigu_academy_01: "石鼓书院"
 22. culai_academy_01: "徂徕书院"

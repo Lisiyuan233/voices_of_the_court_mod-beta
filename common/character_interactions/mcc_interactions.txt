@@ -39,6 +39,16 @@ mcc_interaction = {
 		#		value = flag:talk_scene_"sence_name"
 		#	}
 		#}
+		#在灵隐寺
+		if = {
+			limit = {
+				scope:talk_scene_lingyinsi = yes
+			}
+			set_global_variable = {
+				name = talk_scene
+				value = flag:talk_scene_lingyinsi
+			}
+		}
 		#在日本皇宫
 		if = {
 			limit = {
@@ -287,16 +297,17 @@ mcc_interaction = {
 			limit = {
 				OR = {
 					#在此段注释的下方添加_代码块2
-					#代码块2示例
-					#scope:talk_scene_"sence_name" = yes
-					scope:talk_scene_throneroom_japan = yes
-					scope:talk_scene_shaolinsi = yes
-					scope:talk_scene_wudangshandaoguan = yes
-					scope:talk_scene_leshandafou = yes
-					scope:talk_scene_taishan = yes
-					scope:talk_scene_wulingyuan = yes
-					scope:talk_scene_kaifenghuangcheng = yes
-					scope:talk_scene_tengwangge = yes
+				#代码块2示例
+				#scope:talk_scene_"sence_name" = yes
+				scope:talk_scene_lingyinsi = yes
+				scope:talk_scene_throneroom_japan = yes
+				scope:talk_scene_shaolinsi = yes
+				scope:talk_scene_wudangshandaoguan = yes
+				scope:talk_scene_leshandafou = yes
+				scope:talk_scene_taishan = yes
+				scope:talk_scene_wulingyuan = yes
+				scope:talk_scene_kaifenghuangcheng = yes
+				scope:talk_scene_tengwangge = yes
 					
 					scope:talk_scene_yueyanglou = yes
 					scope:talk_scene_huanghelou = yes
@@ -350,6 +361,12 @@ mcc_interaction = {
 	#	flag = talk_scene_"sence_name"
 	#	localization = talk_scene_"sence_name"_string
 	#}
+	#在灵隐寺
+	send_option = {
+		is_shown = {can_talk_in_lingyinsi = yes}
+		flag = talk_scene_lingyinsi
+		localization = talk_scene_lingyinsi_string
+	}
 	#在日本皇宫
 	send_option = {
 		is_shown = {can_talk_in_throneroom_japan = yes}

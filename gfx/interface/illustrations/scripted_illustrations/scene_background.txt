@@ -50,6 +50,29 @@ talk_background = {
 #		reference = "environment_event_garden"		
 #	}
 
+	#在灵隐寺见面
+	texture = {
+		trigger = {		
+			OR = {
+				global_var:talk_scene = flag:talk_scene_lingyinsi
+				global_var:meet_scene = flag:meet_scene_lingyinsi
+			}
+		}
+		
+		reference = "scenes/lingyinsi.dds"		
+	}
+	
+	environment = {
+		trigger = {		
+			OR = {
+				global_var:talk_scene = flag:talk_scene_lingyinsi
+				global_var:meet_scene = flag:meet_scene_lingyinsi
+			}
+		}
+		
+		reference = "environment_event_garden"		
+	}
+
 	#在日本皇宫见面
 	texture = {
 		trigger = {		

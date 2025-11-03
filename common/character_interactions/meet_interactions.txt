@@ -58,6 +58,16 @@ ckms_meet_interaction = {
 		#			value = flag:meet_scene_"sence_name"
 		#		}
 		#}
+		#在灵隐寺
+		if = {
+			limit = {
+				scope:meet_scene_lingyinsi = yes
+			}
+			set_global_variable = {
+				name = meet_scene
+				value = flag:meet_scene_lingyinsi
+			}
+		}
 		#在日本皇宫
 		if = {
 			limit = {
@@ -304,16 +314,17 @@ ckms_meet_interaction = {
 			limit = {
 				OR = {
 					#在此段注释的下方添加_代码块5
-					#代码块5示例
-					#scope:meet_scene_"sence_name" = yes
-					scope:meet_scene_throneroom_japan = yes
-					scope:meet_scene_shaolinsi = yes
-					scope:meet_scene_wudangshandaoguan = yes
-					scope:meet_scene_leshandafou = yes
-					scope:meet_scene_taishan = yes
-					scope:meet_scene_wulingyuan = yes
-					scope:meet_scene_kaifenghuangcheng = yes
-					scope:meet_scene_tengwangge = yes
+				#代码块5示例
+				#scope:meet_scene_"sence_name" = yes
+				scope:meet_scene_lingyinsi = yes
+				scope:meet_scene_throneroom_japan = yes
+				scope:meet_scene_shaolinsi = yes
+				scope:meet_scene_wudangshandaoguan = yes
+				scope:meet_scene_leshandafou = yes
+				scope:meet_scene_taishan = yes
+				scope:meet_scene_wulingyuan = yes
+				scope:meet_scene_kaifenghuangcheng = yes
+				scope:meet_scene_tengwangge = yes
 
 					scope:meet_scene_yueyanglou = yes
 					scope:meet_scene_huanghelou = yes
@@ -367,6 +378,12 @@ ckms_meet_interaction = {
 	#	flag = meet_scene_"sence_name"
 	#	localization = meet_scene_"sence_name"_string
 	#}
+	#在灵隐寺
+	send_option = {
+		is_shown = {can_meet_in_lingyinsi = yes}
+		flag = meet_scene_lingyinsi
+		localization = meet_scene_lingyinsi_string
+	}
 	#在日本皇宫
 	send_option = {
 		is_shown = {can_meet_in_throneroom_japan = yes}

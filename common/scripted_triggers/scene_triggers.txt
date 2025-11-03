@@ -11,6 +11,16 @@
 #	}
 #}
 
+#在灵隐寺见面
+can_talk_in_lingyinsi = {
+	AND = {
+		scope:actor.location = scope:recipient.location
+		scope:actor = {is_imprisoned = no}
+		scope:recipient = {is_imprisoned = no}
+		scope:actor.location = { has_building = lingyin_temple_01 }
+	}
+}
+
 #在日本皇宫见面
 can_talk_in_throneroom_japan = {
 	AND = {
