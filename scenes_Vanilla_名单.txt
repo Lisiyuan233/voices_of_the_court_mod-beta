@@ -1,0 +1,207 @@
+序号 | 场景中文名称 | 场景英文名称 | 图片文件名
+--- | --- | --- | ---
+1 | 小巷 | Alley | alley.dds
+2 | 白天小巷 | Alley Day | alley_day.dds
+3 | 军械库 | Armory | armory.dds
+4 | 战场 | Battlefield | battlefield.dds
+5 | 卧室 | Bedchamber | bedchamber.dds
+6 | 篝火 | Bonfire | bp1_bonfire.dds
+7 | 印度走廊白天 | Indian Corridor Day | bp1_corridor_indian_day.dds
+8 | 印度走廊夜晚 | Indian Corridor Night | bp1_corridor_indian_night.dds
+9 | 印度庭院 | Indian Courtyard | bp1_courtyard_indian.dds
+10 | 中东庭院 | Middle Eastern Courtyard | bp1_courtyard_mena.dds
+11 | 十字路口客栈 | Crossroads Inn | bp1_crossroads_inn.dds
+12 | 沙漠 | Desert | bp1_desert.dds
+13 | 部落码头 | Tribal Docks | bp1_docks_tribal.dds
+14 | 中东花园白天 | Middle Eastern Garden Day | bp1_garden_mena_day.dds
+15 | 丘陵 | Hills | bp1_hills.dds
+16 | 丛林 | Jungle | bp1_jungle.dds
+17 | 西方厨房 | Western Kitchen | bp1_kitchen_western.dds
+18 | 平原 | Plains | bp1_plains.dds
+19 | 中东休息室 | Middle Eastern Relaxing Room | bp1_relaxing_room_mena.dds
+20 | 西方休息室 | Western Relaxing Room | bp1_relaxing_room_western.dds
+21 | 湿地 | Wetlands | bp1_wetlands.dds
+22 | 酒窖 | Wine Cellar | bp1_wine_cellar.dds
+23 | 庭院 | Courtyard | bp2_courtyard.dds
+24 | 印度花园 | Indian Garden | bp2_indian_garden.dds
+25 | 育婴室 | Nursery | bp2_nursery.dds
+26 | 印度书房 | Indian Study | bp2_study_indian.dds
+27 | 中东酒馆 | Middle Eastern Tavern | bp2_tavern_mena.dds
+28 | 大学 | University | bp2_university.dds
+29 | 中东大学 | Middle Eastern University | bp2_university_mena.dds
+30 | 海岸 | Coast | bp3_coast.dds
+31 | 冬季丘陵 | Winter Hills | bp3_hills_winter.dds
+32 | 冬季山脉 | Winter Mountain | bp3_mountain_winter.dds
+33 | 冬季平原 | Winter Plains | bp3_plains_winter.dds
+34 | 河边 | Riverside | bp3_riverside.dds
+35 | 冬季草原 | Winter Steppe | bp3_steppe_winter.dds
+36 | 冬季湿地 | Winter Wetlands | bp3_wetlands_winter.dds
+37 | 教堂 | Church | church.dds
+38 | 走廊 | Corridor | corridor.dds
+39 | 白天走廊 | Corridor Day | corridor_day.dds
+40 | 议事厅 | Council Chamber | councilchamber.dds
+41 | 庭院 | Courtyard | courtyard.dds
+42 | 沙漠 | Desert | desert.dds
+43 | 游牧沙漠 | Nomad Desert | desert_nomad.dds
+44 | 沙漠定居点 | Desert Settlement | desert_settlement.dds
+45 | 码头 | Docks | docks.dds
+46 | 干旱地带 | Drylands | drylands.dds
+47 | 地牢 | Dungeon | dungeon.dds
+48 | 狗舍 | Dog Kennels | ep2_dog_kennels.dds
+49 | 印度宴会 | Indian Feast | ep2_feast_indian.dds
+50 | 中东宴会 | Middle Eastern Feast | ep2_feast_mena.dds
+51 | 草原宴会 | Steppe Feast | ep2_feast_steppe.dds
+52 | 撒哈拉以南宴会 | Sub-Saharan Feast | ep2_feast_sub_saharan.dds
+53 | 印度圣地 | Indian Holy Site | ep2_holysite_indian.dds
+54 | 耶路撒冷圣地 | Jerusalem Holy Site | ep2_holysite_jerusalem.dds
+55 | 麦加圣地 | Mecca Holy Site | ep2_holysite_mecca.dds
+56 | 中东圣地 | Middle Eastern Holy Site | ep2_holysite_mena.dds
+57 | 部落圣地 | Tribal Holy Site | ep2_holysite_tribal.dds
+58 | 西方圣地 | Western Holy Site | ep2_holysite_western.dds
+59 | 洞穴入口狩猎 | Cave Entrance Hunt | ep2_hunt_cave_entrance.dds
+60 | 猎鹰训练场 | Falconry Mews Hunt | ep2_hunt_falconry_mews.dds
+61 | 雾中森林狩猎 | Foggy Forest Hunt | ep2_hunt_foggy_forest.dds
+62 | 管理森林狩猎 | Managed Forest Hunt | ep2_hunt_forest_managed.dds
+63 | 通用狩猎 | Generic Hunt | ep2_hunt_generic.dds
+64 | 偷猎者营地狩猎 | Poachers Camp Hunt | ep2_hunt_poachers_camp.dds
+65 | 雪林狩猎 | Snowy Forest Hunt | ep2_hunt_snowy_forest.dds
+66 | 印度锦标赛 | India Tournament | ep2_tournament_india.dds
+67 | 中东锦标赛 | Middle Eastern Tournament | ep2_tournament_mena.dds
+68 | 部落锦标赛 | Tribal Tournament | ep2_tournament_tribal.dds
+69 | 西方锦标赛 | Western Tournament | ep2_tournament_western.dds
+70 | 桥梁旅行 | Bridge Travel | ep2_travel_bridge.dds
+71 | 沙漠旅行 | Desert Travel | ep2_travel_desert.dds
+72 | 农场旅行 | Farm Travel | ep2_travel_farm.dds
+73 | 丘陵旅行 | Hills Travel | ep2_travel_hills.dds
+74 | 山脉旅行 | Mountains Travel | ep2_travel_mountains.dds
+75 | 草原旅行 | Steppe Travel | ep2_travel_steppe.dds
+76 | 西方村庄节日 | Western Village Festival | ep2_village_festival_western.dds
+77 | 印度婚礼卧室 | Indian Wedding Bedroom | ep2_wedding_bedroom_indian.dds
+78 | 中东婚礼卧室 | Middle Eastern Wedding Bedroom | ep2_wedding_bedroom_mena.dds
+79 | 印度婚礼仪式 | Indian Wedding Ceremony | ep2_wedding_ceremony_indian.dds
+80 | 中东婚礼仪式 | Middle Eastern Wedding Ceremony | ep2_wedding_ceremony_mena.dds
+81 | 西方婚礼仪式 | Western Wedding Ceremony | ep2_wedding_ceremony_western.dds
+82 | 冒险者背景 | Adventurer Background | ep3_adventurer_background.dds
+83 | 拜占庭王座厅 | Byzantine Throne Room | ep3_byzantine_throne_room.dds
+84 | 干旱地形营地 | Arid Terrain Camp | ep3_camp_arid_terrain.dds
+85 | 营火 | Campfire | ep3_campfire.dds
+86 | 战车赛道 | Chariots Track | ep3_chariots_track.dds
+87 | 城门 | City Gate | ep3_city_gate.dds
+88 | 君士坦丁堡 | Constantinople | ep3_constantinople.dds
+89 | 君士坦丁堡暴动 | Constantinople Riot | ep3_constantinople_riot.dds
+90 | 拜占庭宴会 | Byzantine Feast | ep3_feast_byzantine.dds
+91 | 圣索菲亚大教堂 | Hagia Sophia | ep3_hagia_sophia.dds
+92 | 希波德罗姆战车赛 | Hippodrome Chariot Race | ep3_hippodrome_chariot_race.dds
+93 | 东正教圣地 | Orthodox Holy Site | ep3_holysite_orthodox.dds
+94 | 中世纪庄园 | Medieval Estate | ep3_medi_estate.dds
+95 | 中世纪市场 | Medieval Market | ep3_medi_market.dds
+96 | 中世纪书房 | Medieval Study | ep3_medi_study.dds
+97 | 军营帐篷 | Military Tent | ep3_military_tent.dds
+98 | 休息室 | Relaxing Room | ep3_relaxing_room.dds
+99 | 休息帐篷 | Relaxing Tent | ep3_relaxing_tent.dds
+100 | 农场 | Farms | farms.dds
+101 | 宴会 | Feast | feast.dds
+102 | 森林 | Forest | forest.dds
+103 | 松林 | Pine Forest | forest_pine.dds
+104 | 搁浅长船 | Beached Longship | fp1_beached_longship.dds
+105 | 海洋 | Ocean | fp1_ocean.dds
+106 | 北欧海洋 | Norse Ocean | fp1_ocean_norse.dds
+107 | 符文石 | Runestone | fp1_runestone.dds
+108 | 符文石圈 | Runestone Circle | fp1_runestone_circle.dds
+109 | 管家书房 | Steward Study | fp1_steward_study.dds
+110 | 非部落王座厅 | Non-tribal Throne Room | fp1_throneroom_nontribal.dds
+111 | 部落王座厅 | Tribal Throne Room | fp1_throneroom_tribal.dds
+112 | 部落走廊 | Tribal Corridor | fp1_tribal_corridor.dds
+113 | 部落监狱 | Tribal Prison | fp1_tribal_prison.dds
+114 | 部落神庙 | Tribal Temple | fp1_tribal_temple.dds
+115 | 维京宴会 | Viking Feast | fp1_viking_feast.dds
+116 | 白天走廊 | Corridor Day | fp2_corridor_day.dds
+117 | 夜晚走廊 | Corridor Night | fp2_corridor_night.dds
+118 | 庭院 | Courtyard | fp2_courtyard.dds
+119 | 花园 | Garden | fp2_garden.dds
+120 | 监狱 | Prison | fp2_prison.dds
+121 | 休息室 | Relaxing Room | fp2_relaxing_room.dds
+122 | 神庙 | Temple | fp2_temple.dds
+123 | 王座厅 | Throne Room | fp2_throneroom.dds
+124 | 浴场 | Bathhouse | fp3_bathhouse.dds
+125 | 洞穴 | Cave | fp3_cave.dds
+126 | 夜晚庭院 | Courtyard Night | fp3_courtyard_night.dds
+127 | 码头 | Docks | fp3_docks.dds
+128 | 神庙 | Temple | fp3_temple.dds
+129 | 王座厅 | Throne Room | fp3_throneroom.dds
+130 | 地下墓穴 | Catacombs | fp4_catacombs.dds
+131 | 被诅咒的村庄 | Condemned Village | fp4_condemned_village.dds
+132 | 火葬柴堆 | Funeral Pyre | fp4_funeral_pyre.dds
+133 | 传奇战场 | Legendary Battlefield | fp4_legendary_battlefield.dds
+134 | 传奇绿洲 | Legendary Oasis | fp4_legendary_oasis.dds
+135 | 传奇泉水 | Legendary Spring | fp4_legendary_spring.dds
+136 | 部落医生 | Tribal Physician | fp4_physician_tribal.dds
+137 | 印度医生书房 | Indian Physician Study | fp4_study_physician_indian.dds
+138 | 中东医生书房 | Middle Eastern Physician Study | fp4_study_physician_mena.dds
+139 | 绞刑架 | Gallows | gallows.dds
+140 | 花园 | Garden | garden.dds
+141 | 通用营地 | Generic Camp | genericcamp.dds
+142 | 东方市场 | Eastern Market | market_east.dds
+143 | 部落市场 | Tribal Market | market_tribal.dds
+144 | 西方市场 | Western Market | market_west.dds
+145 | 清真寺 | Mosque | mosque.dds
+146 | 山脉 | Mountains | mountains.dds
+147 | 草原营地 | Steppe Camp | mpo_camp_steppe.dds
+148 | 草原营火 | Steppe Campfire | mpo_campfire_steppe.dds
+149 | 草原城市 | Steppe City | mpo_city_steppe.dds
+150 | 草原狩猎 | Steppe Hunt | mpo_hunt_steppe.dds
+151 | 亚洲燃烧突袭 | Asian Burning Raid | mpo_raid_burning_asian.dds
+152 | 亚洲乡村村庄 | Asian Rural Village | mpo_rural_village_asian.dds
+153 | 草原黄昏 | Steppe Evening | mpo_steppe_evening.dds
+154 | 草原神庙 | Steppe Temple | mpo_temple_steppe.dds
+155 | 蒙古帐篷内部 | Mongol Tent Interior | mpo_tent_interior_mongol.dds
+156 | 燃烧突袭 | Burning Raid | raid_burning.dds
+157 | 起居室 | Sitting Room | sittingroom.dds
+158 | 草原 | Steppe | steppe.dds
+159 | 书房 | Study | study.dds
+160 | 医生书房 | Physician Study | study_physician.dds
+161 | 酒馆 | Tavern | tavern.dds
+162 | 神庙 | Temple | temple.dds
+163 | 测试事件 | Test Event | test_event.dds
+164 | 亚洲白天小巷 | Asian Alley Day | tgp_alley_day_asia.dds
+165 | 亚洲夜晚小巷 | Asian Alley Night | tgp_alley_night_asia.dds
+166 | 亚洲庄园 | Asian Estate | tgp_asia_estate.dds
+167 | 亚洲王座厅 | Asian Throne Room | tgp_asia_throne_room.dds
+168 | 亚洲营地 | Asian Camp | tgp_camp_asia.dds
+169 | 中国城市 | Chinese City | tgp_chinese_city.dds
+170 | 中国走廊白天 | Chinese Corridor Day | tgp_chinese_corridor_day.dds
+171 | 中国走廊夜晚 | Chinese Corridor Night | tgp_chinese_corridor_night.dds
+172 | 亚洲庭院 | Asian Courtyard | tgp_courtyard_asia.dds
+173 | 亚洲十字路口客栈 | Asian Crossroad Inn | tgp_crossroad_inn_asia.dds
+174 | 亚洲码头 | Asian Docks | tgp_docks_asia.dds
+175 | 检查室 | Examination Room | tgp_examination_room.dds
+176 | 亚洲农场 | Asian Farm | tgp_farm_asia.dds
+177 | 亚洲宴会 | Asian Feast | tgp_feast_asia.dds
+178 | 日本节日仪式 | Japanese Festival Ritual | tgp_festival_ritual_japan.dds
+179 | 亚洲花园 | Asian Garden | tgp_garden_asia.dds
+180 | 亚洲圣地 | Asian Holy Site | tgp_holysite_asia.dds
+181 | 亚洲通用狩猎 | Asian Generic Hunt | tgp_hunt_generic_asia.dds
+182 | 日本王座厅 | Japanese Throne Room | tgp_japan_throne_room.dds
+183 | 日本城市 | Japanese City | tgp_japanese_city.dds
+184 | 亚洲厨房 | Asian Kitchen | tgp_kitchen_asia.dds
+185 | 亚洲市场 | Asian Market | tgp_market_asia.dds
+186 | 日本月节 | Japanese Moon Festival | tgp_moon_festival_japan.dds
+187 | 泛滥河流 | Overflowing River | tgp_overflowing_river.dds
+188 | 亚洲医生 | Asian Physician | tgp_physician_asia.dds
+189 | 亚洲休息室 | Asian Relaxing Room | tgp_relaxing_room_asia.dds
+190 | 稻田 | Rice Fields | tgp_rice_fields.dds
+191 | 废墟领地 | Ruined Holding | tgp_ruined_holding.dds
+192 | 亚洲书房 | Asian Study | tgp_study_asia.dds
+193 | 日本书房 | Japanese Study | tgp_study_japan.dds
+194 | 日本七夕节 | Japanese Tanabata Festival | tgp_tanabata_festival_japan.dds
+195 | 日本七夕节夜晚 | Japanese Tanabata Festival Night | tgp_tanabata_festival_night_japan.dds
+196 | 亚洲酒馆 | Asian Tavern | tgp_tavern_asia.dds
+197 | 亚洲神庙 | Asian Temple | tgp_temple_asia.dds
+198 | 海边村庄 | Village by Sea | tgp_village_sea.dds
+199 | 亚洲婚礼卧室 | Asian Wedding Bedroom | tgp_wedding_bedroom_asia.dds
+200 | 亚洲婚礼仪式 | Asian Wedding Ceremony | tgp_wedding_ceremony_asia.dds
+201 | 东方王座厅 | Eastern Throne Room | throneroom_east.dds
+202 | 印度王座厅 | Indian Throne Room | throneroom_india.dds
+203 | 地中海王座厅 | Mediterranean Throne Room | throneroom_mediterranean.dds
+204 | 部落王座厅 | Tribal Throne Room | throneroom_tribal.dds
+205 | 西方王座厅 | Western Throne Room | throneroom_west.dds

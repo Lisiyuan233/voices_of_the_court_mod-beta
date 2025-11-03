@@ -24,7 +24,75 @@ talk_background = {
 		
 		reference = "environment_event_garden"		
 	}
+
+	#内阁会议
+	texture = {
+		trigger = {		
+			OR = {
+				global_var:talk_scene = flag:talk_scene_cabinet_meeting_chinese
+				global_var:meet_scene = flag:talk_scene_cabinet_meeting_chinese
+			}
+		}
+		
+		reference = "scenes/throneroom_east_fuya1.dds"		
+	}
+	
+	environment = {
+		trigger = {		
+			OR = {
+				global_var:talk_scene = flag:talk_scene_cabinet_meeting_chinese
+				global_var:meet_scene = flag:talk_scene_cabinet_meeting_chinese
+			}
+		}
+		
+		reference = "environment_event_garden"		
+	}
+	#内阁会议 中枢
+	texture = {
+		trigger = {		
+			OR = {
+				global_var:talk_scene = flag:talk_scene_cabinet_meeting_chinese_empire
+				global_var:meet_scene = flag:talk_scene_cabinet_meeting_chinese_empire
+			}
+		}
+		
+		reference = "scenes/tgp_frontend_celestial.dds"		
+	}
+	
+	environment = {
+		trigger = {		
+			OR = {
+				global_var:talk_scene = flag:talk_scene_cabinet_meeting_chinese_empire
+				global_var:meet_scene = flag:talk_scene_cabinet_meeting_chinese_empire
+			}
+		}
+		
+		reference = "environment_event_garden"		
+	}
+	#内阁会议 普通
+	texture = {
+		trigger = {		
+			OR = {
+				global_var:talk_scene = flag:talk_scene_cabinet_meeting
+				global_var:meet_scene = flag:talk_scene_cabinet_meeting
+			}
+		}
+		
+		reference = "scenes/frontend_west.dds"		
+	}
+	
+	environment = {
+		trigger = {		
+			OR = {
+				global_var:talk_scene = flag:talk_scene_cabinet_meeting
+				global_var:meet_scene = flag:talk_scene_cabinet_meeting
+			}
+		}
+		
+		reference = "environment_event_garden"		
+	}
 	##########################################
+
 
 #在此段注释的下方添加_代码块16
 #代码块16示例
