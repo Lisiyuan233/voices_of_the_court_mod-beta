@@ -26,6 +26,17 @@ mcc_event.1001 = {
 	#	trigger_event = talk_event.9001
 	#}
 
+	#在武当山道观
+	option ={
+		name = talk_scene_wudangshandaoguan_string
+		trigger = {can_talk_in_wudangshandaoguan = yes}
+			set_global_variable = {
+				name = talk_scene
+				value = flag:talk_scene_wudangshandaoguan
+			}
+		trigger_event = talk_event.9001
+	}
+
 	#在乐山大佛
 	option ={
 		name = talk_scene_leshandafou_string

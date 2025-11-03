@@ -50,6 +50,29 @@ talk_background = {
 #		reference = "environment_event_garden"		
 #	}
 
+	#在武当山道观见面
+	texture = {
+		trigger = {		
+			OR = {
+				global_var:talk_scene = flag:talk_scene_wudangshandaoguan
+				global_var:meet_scene = flag:meet_scene_wudangshandaoguan
+			}
+		}
+		
+		reference = "scenes/wudangshandaoguan.dds"		
+	}
+	
+	environment = {
+		trigger = {		
+			OR = {
+				global_var:talk_scene = flag:talk_scene_wudangshandaoguan
+				global_var:meet_scene = flag:meet_scene_wudangshandaoguan
+			}
+		}
+		
+		reference = "environment_event_garden"		
+	}
+
 	#在乐山大佛见面
 	texture = {
 		trigger = {		

@@ -5,7 +5,7 @@ kaifeng_palace_01
 wulingyuan_01
 4.乐山大佛 leshandafou √
 leshan_giant_buddha_01
-5.yungang_grottoes_01: "云冈石窟"
+5.yungang_grottoes_01: "云冈石窟" √
 6.wudang_mountain_temples_01: "武当山道观"
 7.shaolin_monastery_01: "少林寺"
 8.lingyin_temple_01: "灵隐寺"

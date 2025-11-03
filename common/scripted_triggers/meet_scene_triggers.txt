@@ -13,6 +13,16 @@
 #	}
 #}
 
+#在武当山道观见面
+can_meet_in_wudangshandaoguan = {
+	AND = {
+		scope:actor.location = scope:recipient.location
+		scope:actor = {is_imprisoned = no}
+		scope:recipient = {is_imprisoned = no}
+		scope:actor.location = { has_building = wudang_mountain_temples_01 }
+	}
+}
+
 #在乐山大佛见面
 can_meet_in_leshandafou = {
 	AND = {

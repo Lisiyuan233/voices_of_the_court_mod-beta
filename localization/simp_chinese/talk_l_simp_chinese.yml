@@ -10,6 +10,9 @@ talk_herhim:0 "[recipient.GetHerHim]"
 #talk_scene_"scene_name"_string:0 "在scene_name见面"
 #meet_scene_"scene_name"_string:0 "在scene_name见面"
 
+talk_scene_wudangshandaoguan_string:0 "在武当山道观见面"
+meet_scene_wudangshandaoguan_string:0 "在武当山道观见面"
+
 talk_scene_leshandafou_string:0 "在乐山大佛见面"
 meet_scene_leshandafou_string:0 "在乐山大佛见面"
 
