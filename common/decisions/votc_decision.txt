@@ -151,7 +151,9 @@ votc_family_decision = {  # 决策的核心定义结构，"my_decision"为决策
     ### 触发条件（jomini语法的触发器）
     # 接收角色（character）作为作用范围，判断图片是否适用
     # 若不设置trigger，默认始终生效
-
+		trigger = {
+			culture = { has_coa_gfx = japanese_coa_gfx }
+		}
     ### 资源路径（字符串路径）
     # 图片纹理的路径
     reference = "gfx/interface/illustrations/scenes/throneroom_east_fuya1.dds"
@@ -159,9 +161,10 @@ votc_family_decision = {  # 决策的核心定义结构，"my_decision"为决策
     ### 音效（音效名称）
     # 展示决策详情时播放的音效
     # 默认值："event:/SFX/UI/Generic/Windows/sfx_ui_generic_window_standard_show"
-    soundeffect = "event:/SFX/UI/Generic/Windows/sfx_ui_generic_window_sidebar"
   }
-
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_recruitment.dds"
+	}
 decision_group_type = votc_group_type  # 用于归类决策的可折叠分组类型。
                                # 默认值：若不指定，归入"decisions"分组
 
@@ -221,12 +224,23 @@ decision_group_type = votc_group_type  # 用于归类决策的可折叠分组类
 
 
   effect = {
+    if = {
+      limit = {
+        culture = { has_coa_gfx = japanese_coa_gfx }
+      }
     custom_tooltip = votc_family_decision_effect
     	set_global_variable = {
 			name = talk_scene
 			value = flag:talk_scene_family_meeting_east
 		}
-
+    }
+    else = {
+      custom_tooltip = votc_family_decision_effect
+    	set_global_variable = {
+			name = talk_scene
+			value = flag:talk_scene_family_meeting
+		}
+    }
 		trigger_event = mcc_decision_event.9011
   }  # 执行决策时触发的效果。
                     # 作用范围：角色

@@ -2,7 +2,29 @@
 talk_background = {
 	##########################################
 	#家族会议
+	texture = {
+		trigger = {		
+			OR = {
+				global_var:talk_scene = flag:talk_scene_family_meeting
+				global_var:meet_scene = flag:talk_scene_family_meeting
+			}
+		}
+		
+		reference = "scenes/frontend_west.dds"		
+	}
+	
+	environment = {
+		trigger = {		
+			OR = {
+				global_var:talk_scene = flag:talk_scene_family_meeting
+				global_var:meet_scene = flag:talk_scene_family_meeting
+			}
+		}
+		
+		reference = "environment_event_garden"		
+	}
 
+	#家族会议 中国
 	texture = {
 		trigger = {		
 			OR = {
