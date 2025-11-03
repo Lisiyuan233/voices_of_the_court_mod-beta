@@ -30,6 +30,22 @@ talk_event.1001 = {
 #	trigger_event = talk_event.9001
 #	}
 
+	#在少林寺
+	option ={
+		name = talk_scene_shaolinsi_string
+		trigger = {can_talk_in_shaolinsi = yes}
+		
+			set_global_variable = {
+				name = talk_scene
+				value = flag:talk_scene_shaolinsi
+			}
+
+		
+		
+		
+		trigger_event = talk_event.9001
+	}
+
 	#在武当山道观
 	option ={
 		name = talk_scene_wudangshandaoguan_string

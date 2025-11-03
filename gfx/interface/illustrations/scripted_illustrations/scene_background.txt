@@ -50,6 +50,29 @@ talk_background = {
 #		reference = "environment_event_garden"		
 #	}
 
+	#在少林寺见面
+	texture = {
+		trigger = {		
+			OR = {
+				global_var:talk_scene = flag:talk_scene_shaolinsi
+				global_var:meet_scene = flag:meet_scene_shaolinsi
+			}
+		}
+		
+		reference = "scenes/shaolinsi.dds"		
+	}
+	
+	environment = {
+		trigger = {		
+			OR = {
+				global_var:talk_scene = flag:talk_scene_shaolinsi
+				global_var:meet_scene = flag:meet_scene_shaolinsi
+			}
+		}
+		
+		reference = "environment_event_garden"		
+	}
+
 	#在武当山道观见面
 	texture = {
 		trigger = {		
