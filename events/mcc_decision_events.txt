@@ -27,8 +27,10 @@ mcc_decision_event.9011 = {
 			limit = {
 				is_ai=yes
 				this.house=root.house
-				}
-			save_scope_as=famliy_meeting_temp_scope1
+				this.location = root.location
+				is_imprisoned = no
+				}			
+				save_scope_as=famliy_meeting_temp_scope1
 			#debug_log = "test:test3/;/[THIS.Char.GetID]"
 		}
 
@@ -46,7 +48,7 @@ mcc_decision_event.9011 = {
 				is_ai = yes
 				this.house = root.house
 				this.location = root.location
-          		is_imprisoned = no
+				is_imprisoned = no
 				}
 			log_character_v3 = {}
 			#debug_log = "test:test3/;/[THIS.Char.GetID]"
