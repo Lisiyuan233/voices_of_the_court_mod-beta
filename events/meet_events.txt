@@ -389,6 +389,7 @@ ckms_meet_event.9002 = {
 	
 	immediate = {
 		remove_global_variable = talk_pose
+		remove_global_variable = meet_scene
 	}
 }
 

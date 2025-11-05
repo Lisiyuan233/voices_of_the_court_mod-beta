@@ -257,9 +257,6 @@ can_meet_in_throneroom_east_empire1 = {
 	}
 	}
 
-can_meet_in_throneroom_east_empire = {
-
-}
 
 can_meet_in_throneroom = {
 	AND = {

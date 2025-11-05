@@ -152,7 +152,7 @@ votc_family_decision = {  # 决策的核心定义结构，"my_decision"为决策
     # 接收角色（character）作为作用范围，判断图片是否适用
     # 若不设置trigger，默认始终生效
 		trigger = {
-			culture = { has_coa_gfx = japanese_coa_gfx }
+			culture = { has_coa_gfx = chinese_group_coa_gfx }
 		}
     ### 资源路径（字符串路径）
     # 图片纹理的路径
@@ -226,7 +226,7 @@ decision_group_type = votc_group_type  # 用于归类决策的可折叠分组类
   effect = {
     if = {
       limit = {
-        culture = { has_coa_gfx = japanese_coa_gfx }
+        culture = { has_coa_gfx = chinese_group_coa_gfx }
       }
     custom_tooltip = votc_family_decision_effect
     	set_global_variable = {
