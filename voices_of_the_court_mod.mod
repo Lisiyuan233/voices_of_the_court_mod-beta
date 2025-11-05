@@ -4,4 +4,4 @@ tags={
 }
 name="Voices of the Court beta"
 supported_version="1.18.*"
-path="mod/voices_of_the_court_mod-beta"
+path="mod/voices_of_the_court_mod"
