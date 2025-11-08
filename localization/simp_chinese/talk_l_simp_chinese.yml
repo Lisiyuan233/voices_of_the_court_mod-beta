@@ -86,8 +86,9 @@ not_in_same_province:0 "我们不在同一个省"
 
 mcc_interaction:0 "多人谈话"
 ckms_meet_interaction:0 "三人谈话"
-ckms_meet_interaction.desc:0 "与 [recipient.GetShortUINameNoTooltip] 和另一方发起对话"
+ckms_meet_interaction.desc:0 "与 [recipient.GetShortUINameNoTooltip] 和另一方（需要先钉选）发起对话"
 recipient_secondary_ckms_meet_interaction:0 "第二受邀者"
+mcc_interaction.desc:0 "与所有在同一地点的钉选角色发起对话"
 
 invite_to_talk_interaction:0 "邀请来谈话"
 invite_to_talk_interaction.desc:0 "邀请 [recipient.GetTitledFirstName] 来谈话"
