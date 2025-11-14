@@ -1,0 +1,50 @@
+﻿l_simp_chinese:
+
+hmd_event.9003.desc:0 "VOTC:BOOKMARK"
+hmd_event.9004.desc:0 "VOTC:SUMMARY_MANAGER"
+hmd_event.9005.desc:0 "VOTC:CONVERSATION_HISTORY"
+
+votc_bookmark_decision1:0 "VOTC导入剧本"
+votc_bookmark_decision1_effect_desc:0 "导入当前选择的剧本（在后端程序prompt页面Bookmarks中选择），作用是将剧本中的对应事件导入角色的总结文件中"
+
+votc_summay_manage_decision:0 "VOTC总结文本管理"
+votc_summay_manage_decision_effect_desc:0 "打开角色的对话总结文件管理窗口（需要后端程序版本1.3.7及以上）"
+
+votc_conversation_history_decision:0 "VOTC查看对话历史"
+votc_conversation_history_decision_effect_desc:0 "打开角色的对话历史窗口（需要后端程序版本1.3.7及以上）"
+
+
+
+#agot用这个
+#hmd_log_character:0 "VOTC:BOOKMARK/;/character/;/$f_0$/;/$f_18$·$f_16$"
+#东方王朝用这个
+hmd_log_character:0 "VOTC:BOOKMARK/;/character/;/$f_0$/;/$f_18$"
+
+
+f_0:0 "[THIS.Char.GetID]"
+f_1:0 "[THIS.Char.GetTitledFirstNameNoTooltip]"
+f_2:0 "[THIS.Char.GetFullNameNicknamedNoTooltipRegnal]"
+f_3:0 "[THIS.Char.GetPrimaryTitle.GetNameNoTooltip]"
+f_4:0 "[THIS.Char.GetSheHe]"
+f_5:0 "[THIS.Char.GetAge]"
+f_6:0 "[THIS.Char.GetGold]"
+f_7:0 "[THIS.Char.GetOpinionOf(GetPlayer)]"
+f_8:0 "[THIS.Char.GetSexuality]"
+f_9:0 "[THIS.Char.GetAIPersonalityNoTooltip]"
+f_10:0 "[THIS.Char.GetAIGreed]"
+f_11:0 "[THIS.Char.IsIndependentRuler]"
+f_12:0 "[THIS.Char.GetLiege.GetFullNameNicknamedNoTooltipRegnal]"
+f_13:0 "[THIS.Char.GetConsort.GetFullNameNicknamedNoTooltipRegnal]"
+f_14:0 "[THIS.Char.GetCulture.GetName]"
+f_15:0 "[THIS.Char.GetFaith.GetName]"
+f_16:0 "[THIS.Char.GetHouse.GetNameNoTooltip]"
+f_17:0 "[THIS.Char.IsRuler]"
+f_18:0 "[THIS.Char.GetFirstNameNoTooltip]"
+f_19:0 "[THIS.Char.GetCapitalLocation.GetNameNoTooltip]"
+f_20:0 "[THIS.Char.GetTopLiege]"
+f_21:0 "[THIS.Char.GetProwess]"
+f_22:0 "[THIS.Char.IsKnight]"
+f_23:0 "[THIS.Char.GetLiege.GetActiveLawInGroupWithFlag('realm_law').GetNameNoTooltip]"
+f_24:0 "[THIS.Char.IsLandedRuler]"
+f_25:0 "[THIS.Char.GetHeldCourtAndCouncilPositionsString]"
+f_26:0 "[THIS.Char.GetPrimaryTitle.GetRankConcept]"

@@ -1,0 +1,25 @@
+log_hmd_playergamedata = {
+	debug_log = "VOTC:BOOKMARK/;/hmd_start"
+	debug_log = "VOTC:BOOKMARK/;/hmd_gameinfo_head_start"
+	debug_log = "VOTC:BOOKMARK/;/time/;/[GetCurrentDate.GetStringShort]/;/[GetCurrentDate.GetStringLong]"
+	debug_log = "VOTC:BOOKMARK/;/playerdate/;/[GetPlayer.GetID]/;/[GetPlayer.GetHouse.GetNameNoTooltip][GetPlayer.GetFirstNameNoTooltip]"
+	debug_log = "VOTC:BOOKMARK/;/hmd_gameinfo_head_end"
+
+}
+
+hmd_effect = {
+	debug_log = "VOTC:BOOKMARK/;/hmd_charinfo_start"
+		every_living_character = {
+	        debug_log = hmd_log_character
+		}
+
+}
+
+hmd_end_effect = {
+	debug_log = "VOTC:BOOKMARK/;/hmd_charinfo_end"
+	debug_log = "VOTC:BOOKMARK/;/hmd_end"
+}
+
+hmd1_effect = {
+	        debug_log = hmd_log_character
+		}

@@ -1,0 +1,29 @@
+on_game_start_after_lobby = {
+	on_actions = {
+		hmd_on_action
+		hmd_clipboard_effects
+	}
+}
+
+hmd_on_action = {
+	effect = {
+		log_hmd_playergamedata = yes
+		hmd_effect = yes
+		hmd_end_effect = yes
+		every_player = {
+			trigger_event = { 
+				id = hmd_event.9003
+			}
+		}
+	}
+}
+
+hmd_clipboard_effects = {
+	effect = {
+		every_player = {
+			trigger_event = { 
+				id = hmd_event.9003
+			}
+		}
+	}
+}

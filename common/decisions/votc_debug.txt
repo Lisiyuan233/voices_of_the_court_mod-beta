@@ -1,0 +1,51 @@
+votc_bookmark_decision1 = {
+	decision_group_type = debug
+
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
+	}
+
+	
+	effect = {
+		custom_tooltip = votc_bookmark_decision1_effect_desc
+		trigger_event = {
+			on_action =	hmd_on_action
+		}
+	}
+
+	ai_check_interval = 0
+}
+
+votc_summay_manage_decision = {
+	decision_group_type = debug
+
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
+	}
+
+	
+	effect = {
+		custom_tooltip = votc_summay_manage_decision_effect_desc
+		debug_log = "VOTC:summay_manage/;/[GetPlayer.GetID]"
+		trigger_event = hmd_event.9004		
+	}
+
+	ai_check_interval = 0
+}
+
+votc_conversation_history_decision = {
+	decision_group_type = debug
+
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
+	}
+
+	
+	effect = {
+		custom_tooltip = votc_conversation_history_decision_effect_desc
+		debug_log = "VOTC:conversation_history/;/[GetPlayer.GetID]"
+		trigger_event = hmd_event.9005		
+	}
+
+	ai_check_interval = 0
+}
