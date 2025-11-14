@@ -1,7 +1,27 @@
 ﻿l_english:
 
-
 hmd_event.9003.desc:0 "VOTC:BOOKMARK"
+hmd_event.9004.desc:0 "VOTC:SUMMARY_MANAGER"
+hmd_event.9005.desc:0 "VOTC:CONVERSATION_HISTORY"
+
+votc_bookmark_decision1:0 "VOTC Import Bookmark"
+votc_bookmark_decision1_tooltip:0 "Import the selected bookmark"
+votc_bookmark_decision1_confirm:0 "Import Bookmark"
+votc_bookmark_decision1_desc:0 "Import Bookmark"
+votc_bookmark_decision1_effect_desc:0 "Imports the currently selected bookmark (chosen in the backend prompt page under Bookmarks); this adds the corresponding events from the bookmark into the character's summary file."
+
+votc_summay_manage_decision:0 "VOTC Summary Text Manager"
+votc_summay_manage_decision_tooltip:0 "Open the summary text manager"
+votc_summay_manage_decision_confirm:0 "Open Summary Manager"
+votc_summay_manage_decision_desc:0 "Summary Text Management"
+votc_summay_manage_decision_effect_desc:0 "Opens the character's dialogue summary file manager window (requires backend version 1.3.7 or above)."
+
+votc_conversation_history_decision:0 "VOTC View Conversation History"
+votc_conversation_history_decision_tooltip:0 "Open the character's conversation history window"
+votc_conversation_history_decision_confirm:0 "Open Conversation History"
+votc_conversation_history_decision_desc:0 "View Conversation History"
+votc_conversation_history_decision_effect_desc:0 "Opens the character's conversation history window (requires backend version 1.3.7 or above)."
+
 #hmd_log_character:0 "HMD:IN/;/character/;/$f_0$/;/$f_1$/;/$f_2$/;/$f_3$/;/$f_4$/;/$f_5$/;/$f_6$/;/$f_7$/;/$f_8$/;/$f_9$/;/$f_10$/;/$f_11$/;/$f_12$/;/$f_13$/;/$f_14$/;/$f_15$/;/$f_16$/;/$f_17$/;/$f_18$/;/$f_19$/;/$f_20$/;/$f_21$/;/$f_22$/;/$f_23$/;/$f_24$/;/$f_25$/;/$f_26$"
 hmd_log_character:0 "VOTC:BOOKMARK/;/character/;/$f_0$/;/$f_18$ $f_16$"
 

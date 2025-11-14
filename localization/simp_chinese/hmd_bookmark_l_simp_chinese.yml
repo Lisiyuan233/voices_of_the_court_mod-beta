@@ -5,12 +5,21 @@ hmd_event.9004.desc:0 "VOTC:SUMMARY_MANAGER"
 hmd_event.9005.desc:0 "VOTC:CONVERSATION_HISTORY"
 
 votc_bookmark_decision1:0 "VOTC导入剧本"
+votc_bookmark_decision1_tooltip:0 "导入选中的剧本"
+votc_bookmark_decision1_confirm:0 "导入剧本"
+votc_bookmark_decision1_desc:0 "导入剧本"
 votc_bookmark_decision1_effect_desc:0 "导入当前选择的剧本（在后端程序prompt页面Bookmarks中选择），作用是将剧本中的对应事件导入角色的总结文件中"
 
 votc_summay_manage_decision:0 "VOTC总结文本管理"
+votc_summay_manage_decision_tooltip:0 "打开总结文本管理器"
+votc_summay_manage_decision_confirm:0 "打开总结文本管理器"
+votc_summay_manage_decision_desc:0 "总结文本管理"
 votc_summay_manage_decision_effect_desc:0 "打开角色的对话总结文件管理窗口（需要后端程序版本1.3.7及以上）"
 
 votc_conversation_history_decision:0 "VOTC查看对话历史"
+votc_conversation_history_decision_tooltip:0 "打开角色的对话历史窗口"
+votc_conversation_history_decision_confirm:0 "打开对话历史窗口"
+votc_conversation_history_decision_desc:0 "查看对话历史"
 votc_conversation_history_decision_effect_desc:0 "打开角色的对话历史窗口（需要后端程序版本1.3.7及以上）"
 
 
