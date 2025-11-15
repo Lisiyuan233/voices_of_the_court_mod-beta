@@ -167,20 +167,20 @@ can_talk_in_garden_east1 = {
 		scope:recipient = {is_imprisoned = no}
 		OR = {
 				AND = {
-					scope:recipient = {highest_held_title_tier = tier_empire}
+					scope:recipient = {highest_held_title_tier >= tier_empire}
 					scope:recipient.culture = { has_coa_gfx = chinese_group_coa_gfx }	
 					scope:recipient = scope:actor.location.province_owner
 				
 			}
 				AND = {
-					scope:actor = {highest_held_title_tier = tier_empire}
+					scope:actor = {highest_held_title_tier >= tier_empire}
 					scope:actor.culture = { has_coa_gfx = chinese_group_coa_gfx }
 					scope:actor = scope:actor.location.province_owner
 
 			}
 				AND = {
 					scope:actor.location.province_owner.culture = { has_coa_gfx = chinese_group_coa_gfx }
-					scope:actor.location.province_owner = {highest_held_title_tier = tier_empire}
+					scope:actor.location.province_owner = {highest_held_title_tier >= tier_empire}
 					scope:recipient = {is_courtier_of = scope:actor.location.province_owner}
 
 
