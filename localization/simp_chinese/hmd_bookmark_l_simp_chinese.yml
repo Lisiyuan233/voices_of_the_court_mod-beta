@@ -22,6 +22,7 @@ votc_conversation_history_decision_confirm:0 "打开对话历史窗口"
 votc_conversation_history_decision_desc:0 "查看对话历史"
 votc_conversation_history_decision_effect_desc:0 "打开角色的对话历史窗口（需要后端程序版本1.3.7及以上）"
 
+DIALOG_FAILED_TO_OPEN:0 "看到这个说明对话框启动失败，请检查VOTC后端程序是否启动"
 
 
 #agot用这个

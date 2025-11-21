@@ -40,8 +40,12 @@
 		onclick = "[ExecuteConsoleCommand('event ckms_meet_event.9002')]"	
 		onclick = "[ExecuteConsoleCommand('GUI.ClearWidgets meet_window meet_window_counter')]"
 
+	}
 
-		
+	button_standard = {
+		position = { 200 400}
+		size = { 400 100 }
+		text = "DIALOG_FAILED_TO_OPEN"
 	}
 	
 	#close window
