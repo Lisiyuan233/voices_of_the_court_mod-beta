@@ -1,9 +1,3 @@
-on_game_start_after_lobby = {
-	on_actions = {
-		hmd_on_action
-		hmd_clipboard_effects
-	}
-}
 
 hmd_on_action = {
 	effect = {

@@ -8,7 +8,7 @@ votc_bookmark_decision1:0 "VOTC导入剧本"
 votc_bookmark_decision1_tooltip:0 "导入选中的剧本"
 votc_bookmark_decision1_confirm:0 "导入剧本"
 votc_bookmark_decision1_desc:0 "导入剧本"
-votc_bookmark_decision1_effect_desc:0 "导入当前选择的剧本（在后端程序prompt页面Bookmarks中选择），作用是将剧本中的对应事件导入角色的总结文件中"
+votc_bookmark_decision1_effect_desc:0 "导入当前选择的剧本（在后端程序prompt页面Bookmarks中选择），作用是将剧本中的对应事件导入对应角色的总结文件中"
 
 votc_summay_manage_decision:0 "VOTC总结文本管理"
 votc_summay_manage_decision_tooltip:0 "打开总结文本管理器"
