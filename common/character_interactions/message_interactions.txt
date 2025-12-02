@@ -1,0 +1,25 @@
+message_interaction = {
+	category = interaction_category_friendly
+	use_diplomatic_range = yes
+	ignores_pending_interaction_block = yes
+	interface_priority = 201
+	common_interaction = yes
+	desc = message_interaction.desc
+
+
+	ai_will_do = {
+		base = 0
+	}
+
+
+	on_send = {
+		scope:actor = {
+			trigger_event = message_event.360
+		}
+		debug_log = "发送消息"
+	}
+	
+	auto_accept = yes
+	
+}
+

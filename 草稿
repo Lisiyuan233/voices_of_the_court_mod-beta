@@ -1,0 +1,63 @@
+[ROOT.Char.GetLocalizedText( 'story_cycle_dog_name' )]
+储存文本
+debug.360 = {
+	type = character_event
+	title = enter_text_save_in_death_title
+	desc = enter_text_save_in_death_desc
+	theme = default
+	left_portrait = root
+	orphan = yes
+
+	widget = {
+		gui = "event_window_widget_enter_text"
+		container = "dynamic_birth_name"
+		controller = {
+			type = text
+			data = {
+				key = test_saved_text
+				default = cat_name_mite
+			}
+		}
+		setup_scope = {
+			root = { save_scope_as = text_target }
+		}
+	}
+
+	option = {
+		name = enter_text_save_in_death_opt
+		store_localized_text_in_death = test_saved_text
+		add_to_global_variable_list = {
+			name = test_saved_text_character
+			target = root
+		}
+		remove_variable = test_saved_text
+		death = natural
+	}
+}
+
+debug.361 = {
+	type = character_event
+	title = enter_text_save_in_death_title
+	desc = enter_text_save_in_death_retreive_desc
+	theme = default
+	left_portrait = scope:text_character
+	orphan = yes
+
+	immediate = {
+		random_in_global_list = {
+			variable = test_saved_text_character
+			save_scope_as = text_character
+		}
+	}
+
+	option = {
+		name = enter_text_save_in_death_retreive_opt
+	}
+	option = {
+		name = enter_text_save_in_death_clear_opt
+		every_in_global_list = {
+			variable = test_saved_text_character
+			remove_localized_text = test_saved_text
+		}
+	}
+}

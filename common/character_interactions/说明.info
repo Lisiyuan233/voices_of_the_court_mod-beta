@@ -1,0 +1,659 @@
+my_interaction = {
+	# 用于互动菜单。在分类后根据此值对互动进行排序
+	# （数值越高越靠前），并决定是否放入更多...菜单
+	interface_priority = 数字
+
+	# 用于互动菜单。常见互动永远不会被放入更多...子菜单
+	common_interaction = yes/no
+
+	# 必需！用于互动菜单。将互动分组到此类中
+	category = interaction_category_hostile
+
+	# 用于ToggleFilteredCharacterInteractionMenu
+	# 打开互动菜单的子集，只显示具有匹配
+	# filter_tag或类别的互动
+	# 这些在互动菜单中显示时会带有_filter_tag_desc后缀进行本地化
+	filter_tags = { string1 string2 }
+
+	# 使用什么图标。如果一个图标用于多个互动，
+	# 请考虑使其通用（例如，icon_culture用于
+	# 与文化相关的互动，或icon_personal用于个人密谋）。
+	# 否则默认为无/my_interaction键+
+	# gfx/interface/icons/character_interactions中的
+	# 相关my_interaction.dds
+	icon = key
+
+	# 用于定义互动窗口使用的背景图像。这些可以使用触发器。
+	#
+	# Root作用域为互动的scope:actor。如果
+	# 没有定义背景或没有有效的背景，互动GUI将默认为
+	# "study"
+	override_background = { reference = relaxing_room }
+
+	# 互动是否应在互动菜单中高亮显示。
+	# 如果is_valid或is_valid_showing_failures_first为false则不高亮
+	is_highlighted = trigger
+
+	# 菜单中高亮显示时的提示信息
+	highlighted_reason = loc_key
+
+	on_decline_summary = dynamic description		# 显示在接受控件下方的风味文本
+	# 当你需要更引起注意到拒绝效果时使用
+
+	# 此互动使用专门的GUI
+	special_interaction = type
+
+	# 此互动运行专门的代码，通过此标识互动
+	special_ai_interaction = type
+
+	# 互动使用什么界面？
+	interface = call_ally/marriage/grant_titles/etc.
+
+	# 互动应提供哪些自定义角色排序选项？
+	# 最后定义的选项将在下拉列表中首先显示。
+	#
+	# 当前选项：
+	#	candidate_score（需要目标头衔）
+	#	governor_efficiency
+	#	obedience
+	#	merit
+	custom_character_sort = { }
+
+	# 互动启动的密谋类型
+	scheme = elope/murder/etc.
+
+	# 互动是否在接收时为接收者弹出
+	popup_on_receive = yes
+
+	# 如果互动是自动接受的，强制外交通知项
+	force_notification = yes/no
+
+	# 在接收时暂停游戏。通常应与popup_on_receive结合使用
+	pause_on_receive = yes/no
+
+	# 如果互动被拒绝，将开始谈判。我们不会显示"不会接受"等，
+	# 因为仍有可能通过谈判事件链接受互动
+	ai_accept_negotiation = yes/no
+
+	# 互动是否隐藏？
+	hidden = yes
+
+	# 互动是否检查外交距离？
+	# 默认是
+	use_diplomatic_range = yes/no/trigger
+
+	# 互动可以发送且AI可能拒绝
+	can_send_despite_rejection = yes
+
+	# 如果行动者是玩家，而接收者
+	# 已经收到了来自他们的待处理互动回复，是否仍可以发送此互动。
+	# 默认为否
+	ignores_pending_interaction_block = yes
+
+	# 互动在发送后的名称。默认为数据库对象键
+	send_name = loc_key
+
+	# 互动是否需要接收者才能打开互动窗口
+	# 非常罕见的情况，当互动从其他UI元素打开，而不是右键菜单
+	# 接收者最终必须通过redirect或代码设置
+	# 除非有代码支持或非常特殊的用例，否则此选项几乎不应设置为`no`
+	# 默认为是
+	needs_recipient_to_open = yes
+
+	# 互动效果是否应在互动
+	# 发送时显示在通知窗口中。
+	# 默认为是
+	show_effects_in_notification = no
+
+	# 如果此互动应该由共治者执行，
+	# 包括非统治者
+	diarch_interaction = no
+
+	# 默认为gfx/interface/icons/
+	# character_interactions/my_interaction_alert.dds
+	alert_icon = texture_path
+
+	# 默认为gfx/interface/icons/
+	# character_interactions/my_interaction_small.dds
+	icon_small = texture_path
+
+	# 何时显示额外图标。
+	# 提示信息键为<key>_extra_icon
+	should_use_extra_icon = { always = yes }
+
+	# 当should_use_extra_icon为true时显示的图标
+	extra_icon = "gfx/<...>/hook_icon.dds"
+
+	# 可能的类型：
+	#	title
+	#	artifact
+	#	men_at_arms
+	#	court_position_type
+	#	count（默认）
+	target_type = type
+
+	# 请参阅FAQ中的可能类型
+	target_filter = type
+
+	# AI中间人的回答是随机的
+	ai_intermediary_maybe = no
+
+	# AI的回答是随机的
+	ai_maybe = yes
+
+	# AI回复前的最少天数
+	ai_min_reply_days = 4
+
+	# AI回复前的最多天数
+	ai_max_reply_days = 9
+
+	# 互动的简短描述
+	desc = loc_key
+
+	# 设置请求文本的语调
+	greeting = negative/positive
+
+	# 显示给中间人的请求文本
+	intermediary_notification_text = loc_key
+
+	# 显示给接收者的请求文本
+	notification_text = loc_key
+
+	# 应显示在肖像下方的文本？
+	# （例如："选择监护人"）
+	prompt = loc_key
+
+	# 多久之后才能再次使用互动？
+	cooldown = { years = x }
+
+	# 多久之后才能再次对接收者使用互动？
+	cooldown_against_recipient = { years = x }
+
+	# 在什么情况下可以对接收者使用互动，
+	# 尽管存在针对该接收者的冷却期？
+	ignore_recipient_recieve_cooldown = trigger
+
+	# 将对与此互动相同类别的所有互动应用冷却期
+	#
+	# 如果互动已经有冷却期，
+	# 将应用较长的冷却期
+	category_cooldown = { years = x }
+
+	# 将对与此互动相同类别且针对
+	# 此接收者的所有互动应用冷却期
+	#
+	# 如果互动已经有冷却期，
+	# 将应用较长的冷却期
+	category_cooldown_against_recipient = { years = x }
+
+	# 互动是否可用且可见
+	#
+	# 避免在此处放置仅测试行动者或全局可见状态的触发器
+	# 请将这些触发器放在is_available中 - 这将使AI更快更好
+	#
+	# 可用作用域：
+	#	scope:actor
+	#	scope:recipient
+	is_shown = trigger
+
+	# 互动在当前设置中是否可选择，触发器仅显示失败条件
+	# 可用作用域：
+	#	scope:actor
+	#	scope:recipient
+	is_valid_showing_failures_only = trigger
+
+	# 互动在当前设置中是否可选择
+	# 可用作用域：
+	#	scope:actor
+	#	scope:recipient
+	is_valid = trigger
+
+	# 目标是否有效，触发器仅显示失败条件
+	has_valid_target_showing_failures_only = trigger
+
+	# 目标是否有效
+	has_valid_target = trigger
+
+	# 此角色是否可被选为有效目标
+	can_be_picked = trigger
+
+	# 此头衔是否可被选为有效目标
+	can_be_picked_title = trigger
+
+	# 此宝物是否可被选为有效目标
+	can_be_picked_artifact = trigger
+
+	# 此军团是否可被选为有效目标
+	can_be_picked_regiment = trigger
+
+	# 是否需要在选择时为玩家打开确认窗口；未指定则为true
+	# 如果评估为false，将在选择时立即运行on_send / on_accept
+	# 已弃用！可用于触发游戏状态变化效果，这些效果应始终提前告知玩家！将在TIT-64917中移除
+	needs_confirmation = trigger
+
+	# 互动是否自动接受，
+	# 或接收者可以决定
+	auto_accept = yes/no/trigger
+
+	# 互动是否可以发送？
+	can_send = trigger
+
+	# 互动是否可以被接收者阻止
+	# （例如通过对行动者的挂钩）
+	can_be_blocked = trigger
+
+	# 效果更改角色互动作用域 - 替换任何行动者、次要行动者、接收者、
+	# 次要接收者和中间人，用任何其他角色
+	# 可用作用域：
+	#	scope:actor
+	#	scope:secondary_actor
+	#	scope:recipient
+	#	scope:secondary_recipient
+	#	scope:intermediary
+	redirect = {}
+
+	# 所有人都被分类到'characters'列表中，
+	# 有可能被显示以供选择。
+	#
+	# 使用行动者、接收者、
+	# 次要行动者和次要接收者的作用域。
+	populate_actor_list = {}
+
+	# 与populate_actor_list相同
+	populate_recipient_list = {}
+
+	# 为了能够在loc中使用值
+	# （例如：RANSOM_COST =
+	# scope:secondary_recipient.ransom_cost_value
+	# 允许您在loc中使用$RANSOM_COST|0$
+	localization_values  = {}
+
+	# 显示在选项块上方的文本 - 一般描述所有选项
+	options_heading = loc_key
+
+	# 添加选项
+	send_option = {
+
+		# 选项是否显示。独立触发器 - 不要
+		# 引用任何其他选项标志以避免逻辑错误
+		is_shown = trigger
+
+		# 选项是否可选择
+		is_valid = trigger
+
+		# 提示信息
+		current_description = desc
+
+		# 如果选中，则scope:flag_name将被设置为yes
+		flag = flag_name
+
+		# 选项标签的loc_key
+		localization = loc_key
+
+		# 窗口打开时此选项是否应启用的触发器。
+		# 未定义则默认为关闭
+		starts_enabled = trigger
+
+		# 此选项是否可以从默认值更改的触发器
+		can_be_changed = trigger
+
+		# 如果为yes，则当AI选择互动时，
+		# 它将执行完整的can send检查，而不是更节省性能的
+		# 接收者拒绝和ai will do检查，请谨慎使用并进行性能分析
+		can_invalidate_interaction = bool
+	}
+
+	# 选项应避免阻止互动发送（除非接收者拒绝），
+	# 因为我们在AI中假设这种情况以提高性能，
+	# 如果需要重新检查，请使用can_invalidate_interaction
+
+	# 选项是否互斥？
+	# 非互斥选项可能会严重损害AI性能
+	# 确保在任何给定时间只有4或5个非互斥选项通过is_shown触发器
+	# 但有很多很少可见的选项是没问题的
+	send_options_exclusive = yes/no
+
+	# 次要作用域目标是否可选？
+	secondary_scopes_optional = yes/no
+
+	# 在互动发送时直接执行
+	on_send = effect
+
+	# 在接收者接受时执行
+	# （仅在中间人接受后）
+	on_accept = effect
+
+	# 在接收者拒绝时执行
+	# （仅在中间人接受后）
+	on_decline = effect
+
+	# 在接收者阻止时执行
+	# （仅在中间人接受后）
+	on_blocked_effect = effect
+
+	# 仅在互动被自动接受时执行。
+	# 在任何其他副作用之前完成
+	# （例如，硬编码的婚姻等）
+	pre_auto_accept = effect
+
+	# 仅在互动被自动接受时执行
+	on_auto_accept = effect
+
+	# 在中间人允许互动发生时执行。
+	# 随后是接收者的决定
+	on_intermediary_accept = effect
+
+	# 在中间人拒绝互动时执行。
+	# 它会阻止在接收者身上调用任何效果
+	on_intermediary_decline = effect
+
+	# 显示在互动项提示信息中的loc键。
+	# 在$INTERACTION$中接收互动的名称。
+	# 默认值"INTERACTION_REPLY_ITEM"
+	reply_item_key = loc_key
+
+
+	### 这些loc键在发送互动时显示给玩家。
+	### 含义是什么将是目标的回答。
+
+	# 当互动将被接受时的loc键。
+	# 默认值"ANSWER_YES"
+	pre_answer_yes_key = loc_key
+
+	# 当互动将不被接受时的loc键。
+	# 默认值"ANSWER_NO"
+	pre_answer_no_key = loc_key
+
+	# 当互动可能被接受时的loc键。
+	# 在$VALUE$中接收接受值。
+	# 默认值"ANSWER_MAYBE"
+	pre_answer_maybe_key = loc_key
+
+	# 接收者接受时的接受细分摘要标题
+	pre_answer_yes_breakdown_key = ANSWER_WILL_ACCEPT
+
+	# 接收者拒绝时的接受细分摘要标题
+	pre_answer_no_breakdown_key = ANSWER_WILL_NOT_ACCEPT
+
+	# 接收者回答随机时的接受细分摘要标题
+	pre_answer_maybe_breakdown_key = ANSWER_SUM_MAYBE
+
+	# 中间人接受时的接受细分摘要标题
+	intermediary_breakdown_yes = ANSWER_WILL_ACCEPT
+
+	# 中间人拒绝时的接受细分摘要标题
+	intermediary_breakdown_no = ANSWER_WILL_NOT_ACCEPT
+
+	# 中间人回答随机时的接受细分摘要标题
+	intermediary_breakdown_maybe = ANSWER_SUM_MAYBE
+
+
+	### 这些loc键在回答互动时显示给玩家。
+
+	# 中间人接受互动按钮文本
+	intermediary_answer_accept_key = ANSWER_YES
+
+	# 中间人拒绝互动按钮文本
+	intermediary_answer_reject_key = ANSWER_NO
+
+	# 接收者阻止互动文本
+	answer_block_key = ANSWER_BLOCK
+
+	# 接收者接受互动按钮文本
+	answer_accept_key = ANSWER_YES
+
+	# 接收者拒绝互动按钮文本
+	answer_reject_key = ANSWER_NO
+
+	# 接收者确认互动按钮文本。
+	# 用于通知已发生的情况
+	answer_acknowledge_key = ANSWER_ACKNOWLEDGE
+
+
+	# 互动的脚本化成本。
+	# 如果行动者无法支付，互动将被禁用，
+	# 成本将在互动发送时从行动者处扣除。
+	# 声望只能由家族花费。
+	cost = {
+		piety = {}
+		prestige = {}
+		gold = {}
+		renown = {}
+	}
+
+	# AI是否会立即响应，而不是假装思考N天？
+	ai_instant_response = yes/no
+
+	# 设置scope:target使AI以特定目标为对象。
+	# 头衔目标互动不需要这个
+	ai_set_target = {}
+
+	ai_targets = {
+		# AI考虑哪些角色作为互动的接收者，
+		# 可以多次编写脚本来组合列表
+		#
+		# 可用列表在此文件的"ai_targets"部分
+		# （尝试添加无效列表将触发错误消息，显示所有可用列表）
+		ai_recipients = type
+
+		# 要考虑的最大目标数量，未设置则考虑所有目标，
+		# 也会考虑它过滤的随机目标
+		max = integer
+
+		# 较低的概率，例如0.25，随机排除该数量的角色不进行检查
+		# 这对节省性能很有用
+		chance = 0-1
+
+		# 为特定目标指定详细信息的参数
+		# 仅用于"situation_participant_group"目标
+		# 指定情况的键。默认为空
+		parameter = ""
+	}
+
+	# ai_targets的快速触发器
+	ai_target_quick_trigger = {
+
+		# 目标必须是成年人
+		adult = yes
+
+		# 目标必须对所有者有好感
+		attracted_to_owner = yes
+
+		# 所有者必须对目标有好感
+		owner_attracted = yes
+
+		# 目标必须在监狱中
+		prison = yes
+	}
+
+	# AI应多久考虑执行一次此互动
+	ai_frequency = months
+
+	# AI应根据最高头衔的等级多久考虑一次此互动（以月为单位）。
+	# '0'表示永不考虑。替代'ai_frequency'使用。
+	# 所有等级都必须定义。
+	ai_frequency_by_tier = {
+		barony = 0
+		county = 10
+		duchy = 2
+		kingdom = 1
+		empire = 1
+		hegemony = 1
+	}
+
+	# AI是否会考虑尝试此互动。
+	# Root作用域为行动者，其他事件目标不可用
+	#
+	# !!! 已弃用 - 所有互动应使用is_available代替
+	#	ai_potential = trigger
+
+	# 此互动是否对行动者可用，包括AI和玩家
+	# 可用作用域：
+	#	root - 行动者
+	is_available = trigger
+
+	# AI中间人是否会批准此互动并转发给接收者
+	ai_intermediary_accept = mtth
+
+	# AI是否会接受此互动的请求
+	ai_accept = mtth
+
+	# AI对发送此互动的兴趣程度（在选择目标后测试）
+	# 0-100百分比的机会，会被限制在范围内。
+	#	ai_will_do = mtth
+
+	### 请注意，对于头衔互动，每个单独的目标头衔都会被评估，
+	### 给出最高ai_will_do的那个将被使用。
+	### 如果互动有选项，给出最高ai_will_do的选项组合将被使用。
+}
+## 常见问题
+问：特殊互动类型arrange_marriage_interaction有什么作用？
+答：special_interaction = arrange_marriage_interaction会向互动添加额外的婚姻信息
+这些信息使游戏在设置互动或回复互动时显示特殊的婚姻界面。
+它也被AI用于知道设置婚姻时应使用哪种互动。
+它会自动使次要参与者结婚/订婚，并建立联盟和分配威望。
+
+问："secondary_actor = marriage"和"secondary_recipient = marriage"有什么作用？
+答：它表明互动有次要参与者（实际上要结婚的人），并且
+我们可以在界面中更改他们。它还会自动将互动重定向到媒人
+这样玩家可以安排与另一个统治者的儿子/女儿结婚，并将孩子作为次要接收者，统治者作为接收者（因为他们将是接受或拒绝的人）。
+它还会设置可选择的角色列表，来自行动者/接收者及其宫廷和子女。
+
+问："secondary_actor = marry_off"和"secondary_recipient = marry_off"有什么作用？
+答：与婚姻非常相似，但有一些例外：
+
+- 角色列表是从所有可以结婚的在世角色计算的。
+- 重定向使你进行互动的角色成为次要行动者（因为你是将他们嫁出去的人）
+- 对于你选择他们结婚的任何人都有婚姻重定向（即主要是雇主）
+问：角色互动触发器如何以及何时被检查？
+答：这些是互动使用的主要触发器：
+
+- is_shown
+- is_highlighted
+- is_valid_showing_failures_only
+- is_valid
+- has_valid_target_showing_failures_only
+- has_valid_target
+- can_be_picked
+- can_be_picked_title
+- can_be_blocked
+- can_send
+问：target_filter的可能类型有哪些？
+答：可能的类型：
+
+- actor_domain_titles
+- recipient_domain_titles
+- secondary_actor_domain_titles
+- secondary_recipient_domain_titles
+- actor_domain_titles_including_leases
+- recipient_domain_titles_including_leases
+- secondary_actor_domain_titles_including_leases
+- secondary_recipient_domain_titles_including_leases
+- actor_de_jure_titles
+- recipient_de_jure_titles
+- secondary_actor_de_jure_titles
+- secondary_recipient_de_jure_titles
+- actor_realm_titles
+- recipient_realm_titles
+- secondary_actor_realm_titles
+- secondary_recipient_realm_titles
+- actor_top_liege_de_jure_titles
+- recipient_top_liege_de_jure_titles
+- secondary_actor_top_liege_de_jure_titles
+- secondary_recipient_top_liege_de_jure_titles
+- actor_artifacts
+- recipient_artifacts
+- actor_artifacts_claimable
+- recipient_artifacts_claimable
+- actor_maa
+- recipient_maa
+- actor_personal_maa
+- recipient_personal_maa
+- actor_title_maa
+- recipient_title_maa
+- count（默认）
+## 互动触发器检查时间和特殊行为
+### 互动发送检查流程
+互动是否可以发送的测试如下：
+
+- 检查是否设置为可发送（这意味着互动使用的所有目标和次要行动者/接收者都必须已被选择）
+- 检查外交距离（如果互动脚本设置使用它）
+- 进行由special_interaction = 决定的特殊is_shown检查
+- 触发器：is_shown
+- 检查接收者是否已经在考虑此互动
+- 触发器：is_valid_showing_failures_only
+- 触发器：has_valid_target_showing_failures_only
+- 触发器：can_send
+- 触发器：is_valid
+- 触发器：has_valid_target
+- 进行由special_interaction = 决定的特殊can_send检查
+如果通过以上所有检查，那么我们检查互动是否需要接受（auto_accept = no或触发器失败，以及可以发送的互动如囚禁）
+需要接受的互动不能发送给AI，除非它会接受。
+
+### 头衔列表填充流程
+当填充头衔列表时，我们查看：
+
+- 根据target_filter = 选择领土地头或法理头衔
+- 触发器：can_be_picked_title，带有完整的互动作用域和设置为scope:target的头衔
+  注意：can_be_picked_title在我们尝试发送时不会检查，它是一个单独的触发器，应该是决定什么可以最终进入选择列表的快速方法
+### 角色列表填充流程
+当填充角色列表时，我们查看：
+
+- secondary_actor/secondary_recipient = 决定基于什么来生成列表（封臣、宫廷成员、婚姻、家族、家族、...）
+如果我们还没有选择角色（许多互动需要我们选择两个角色，如婚姻）：
+
+- 触发器：can_be_picked，带有当前互动作用域和设置为root的测试角色
+否则，如果我们正在选择第二个角色：
+
+- 尝试将角色设置为secondary_actor/secondary_recipient。之后互动应完全设置好。
+- 执行完整的Can Send测试，但忽略AI接受检查。
+注意：can_be_picked仅用于过滤我们需要选择的第一个角色，不是Can Send测试的一部分。
+
+### 其他检查时机
+- Is Shown：is_shown被界面用来检查互动是否应在互动列表中可见
+- Is Valid：is_valid和is_valid_showing_failures_only被测试以查看互动在菜单中是否应启用（可点击）
+## ai_targets
+以下是有效的AI目标：
+
+- known_secrets - 拥有你知道的秘密的角色
+- scheme_targets - 密谋目标
+- hooked_characters - 被挂钩的角色
+- neighboring_rulers - 相邻统治者
+- neighboring_rulers_including_tributary_borders - 类似neighboring_rulers，但也包括你的朝贡国及其所有邻国
+- neighboring_top_overlords_including_tributary_borders - 类似neighboring_rulers_including_tributary_borders，但仅适用于邻国的top_overlords（对于以顶级宗主为目标且朝贡国作为缓冲区的互动很有用）
+- neighboring_top_overlords_connected_by_land - 类似neighboring_top_overlords_including_tributary_borders，但不包括与相关邻国没有陆地连接的宗主
+- peer_vassals - 同级封臣
+- guests - 客人
+- dynasty - 家族
+- courtiers - 宫廷成员
+- councillors - 顾问
+- prisoners - 囚犯
+- confederation_house_heads - 角色集团中所有家族的首领
+- sub_realm_characters - 次级领地角色
+- realm_characters - 领地角色
+- vassals - 封臣
+- tributaries - 朝贡国
+- liege - 领主
+- top_liege - 顶级领主
+- suzerain - 宗主
+- top_suzerain - 顶级宗主
+- self - 自己
+- head_of_faith - 信仰领袖
+- spouses - 配偶
+- family - 家人
+- children - 子女
+- primary_war_enemies - 主要战争敌人
+- war_enemies - 战争敌人
+- war_allies - 战争盟友
+- scripted_relations - 与你有脚本关系的任何角色
+- activity_host - 你参与活动的主持人
+- activity_guests - 你参与活动的客人
+- contacts - 联系人列表中的人（与任务合同相关）
+- domicile_location_top_ruler - 居所位置顶级领地的统治者（适用于居所所有者）
+- domicile_location_top_realm_vassals - 居所位置顶级领地的封臣（适用于居所所有者）
+- domicile_location_neighboring_top_rulers - 相邻顶级领地的统治者（适用于居所所有者，使用居所位置的顶级领主来获取相邻领地）
+- domicile_location_neighboring_top_realm_vassals - 相邻顶级领地的封臣（适用于居所所有者，使用居所位置的顶级领主来获取相邻领地）
+- top_realm_domicile_owners - 位于顶级领主领地的居所所有者（适用于无地居所所有者，使用你所在位置的顶级领主）
+- sub_realm_domicile_owners - 位于你自己领地内的居所所有者（适用于有地统治者）
+- nearby_domicile_owners - 附近的居所所有者（使用00_defines.txt中定义的NEARBY_DOMICILE_RANGE范围值）
+- situation_participant_group - 同一参与者组中的其他角色。需要使用parameter定义要检查的情况的键

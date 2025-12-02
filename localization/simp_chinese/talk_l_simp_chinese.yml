@@ -111,3 +111,7 @@ not_enough_cabinet_member:0 "需要至少2个内阁成员与你在同一地点"
 votc_chinese_empire_cabinet_decision_desc:0 "你将召开一场中枢会议"
 votc_cabinet_decision:0 "内阁会议"
 
+message_interaction.desc:0 "写一封信"
+message_interaction:0 "写信"
+
+message_text:0 "VOTC:LETTER/;/使用中文进行回复/;/[GetPlayer.GetLocalizedText( 'votc_message_text' )]"
