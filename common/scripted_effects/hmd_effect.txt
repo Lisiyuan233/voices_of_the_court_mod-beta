@@ -2,7 +2,7 @@ log_hmd_playergamedata = {
 	debug_log = "VOTC:BOOKMARK/;/hmd_start"
 	debug_log = "VOTC:BOOKMARK/;/hmd_gameinfo_head_start"
 	debug_log = "VOTC:BOOKMARK/;/time/;/[GetCurrentDate.GetStringShort]/;/[GetCurrentDate.GetStringLong]"
-	debug_log = "VOTC:BOOKMARK/;/playerdate/;/[GetPlayer.GetID]/;/[GetPlayer.GetHouse.GetNameNoTooltip][GetPlayer.GetFirstNameNoTooltip]"
+	debug_log = "VOTC:BOOKMARK/;/playerdate/;/[GetPlayer.GetID]/;/[GetPlayer.GetFirstNameNoTooltip]"
 	debug_log = "VOTC:BOOKMARK/;/hmd_gameinfo_head_end"
 
 }

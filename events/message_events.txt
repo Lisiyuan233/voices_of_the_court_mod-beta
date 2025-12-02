@@ -26,6 +26,21 @@ message_event.360 = {
 		}
 	}
 
+	immediate = {
+		set_global_variable = {
+			name = message_first_scope
+			value = scope:actor
+		}
+		set_global_variable = {
+			name = message_second_scope
+			value = scope:recipient
+		}
+		scope:recipient = {
+			log_gamedata = {}
+		}
+		trigger_event = message_event.361
+	}
+
 	option = {
 		name = send_message
 		#store_localized_text_in_death = test_saved_text
@@ -34,42 +49,13 @@ message_event.360 = {
 	}
 }
 
-debug.3601 = {
+message_event.361 = {
 	type = character_event
-	title = enter_text_save_in_death_title
-	desc = enter_text_save_in_death_desc
-	theme = default
-	left_portrait = root
-	orphan = yes
-
+	title = "aha"
+	theme = realm
+	desc = message_event.361.desc
 	widget = {
-		gui = "event_window_widget_enter_text"
-		container = "dynamic_birth_name"
-		controller = {
-			type = text
-			data = {
-				key = test_saved_text
-				default = cat_name_mite
-			}
-		}
-		setup_scope = {
-			root = { save_scope_as = text_target }
-		}
-	}
-
-	option = {
-		name = enter_text_save_in_death_opt
-		store_localized_text_in_death = test_saved_text
-		add_to_global_variable_list = {
-			name = test_saved_text_character
-			target = root
-		}
-		random_in_global_list = {
-			variable = test_saved_text_character
-			save_scope_as = text_character
-		}
-		debug_log = "VOTC:LETTER/;/message/;/[GetPlayer.GetLocalizedText( 'test_saved_text' )]"
-
-		remove_variable = test_saved_text
-	}
+        gui = "event_window_widget_talk_clear"
+        container = "custom_widgets_container"
+    }
 }
