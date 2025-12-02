@@ -38,7 +38,10 @@ message_event.360 = {
 		scope:recipient = {
 			log_gamedata = {}
 		}
-		trigger_event = message_event.361
+		trigger_event = {
+			id = message_event.361
+			days = 1
+		}
 	}
 
 	option = {
@@ -56,6 +59,17 @@ message_event.361 = {
 	desc = message_event.361.desc
 	widget = {
         gui = "event_window_widget_talk_clear"
+        container = "custom_widgets_container"
+    }
+}
+
+message_event.362 = {
+	type = character_event
+	title = "aha"
+	theme = realm
+	desc = message_event.362.desc
+	widget = {
+        gui = "event_window_widget_message"
         container = "custom_widgets_container"
     }
 }

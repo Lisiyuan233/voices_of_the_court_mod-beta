@@ -115,5 +115,6 @@ message_interaction.desc:0 "写一封信"
 message_interaction:0 "写信"
 votc_message_title:0 "写信给 [recipient.GetShortUINamePossessive]"
 votc_message_desc:0 " "
-message_text:0 "VOTC:LETTER/;/使用中文进行回复/;/[GetPlayer.GetLocalizedText( 'votc_message_text' )]/"
+message_text:0 "VOTC:LETTER/;/中文/;/[GetPlayer.GetLocalizedText( 'votc_message_text' )]/"
+votc_huixin_title:0 "[GetGlobalVariable('message_second_scope').Char.GetTitledFirstName]的回信"
 
