@@ -139,7 +139,7 @@ votc_huixin_title9:0 "[GetGlobalVariable('message_second_scope_letter_9').Char.G
 
 
 
-votc_letter_full:0 "信件线程已写满(3/3)"
+votc_letter_full:0 "信件线程已满(9/9)"
 
 event_window_widget_message_write_prompt:0 "输入信件内容"
 
