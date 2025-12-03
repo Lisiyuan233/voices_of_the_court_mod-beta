@@ -111,23 +111,35 @@ not_enough_cabinet_member:0 "需要至少2个内阁成员与你在同一地点"
 votc_chinese_empire_cabinet_decision_desc:0 "你将召开一场中枢会议"
 votc_cabinet_decision:0 "内阁会议"
 
-votc_relaese_letter_decision:0 "VOTC释放信件"
-votc_relaese_letter_decision_desc:0 "释放当前等待回复的信件"
-votc_relaese_letter_decision_tooltip:0 "释放信件"
-votc_relaese_letter_decision_confirm:0 "释放信件"
-votc_relaese_letter_decision_effect_desc:0 "你将释放当前等待回复的信件"
+votc_relaese_letter_decision:0 "VOTC释放信件线程"
+votc_relaese_letter_decision_desc:0 "释放当前等待回复的信件线程"
+votc_relaese_letter_decision_tooltip:0 "释放信件线程"
+votc_relaese_letter_decision_confirm:0 "释放信件线程"
+votc_relaese_letter_decision_effect_desc:0 "你将释放当前等待回复的信件线程，这个操作让你可以无视信件进程计数，很大可能会导致之前还未收到的回信被覆盖。如果你在未开启后端程序的情况下使用了写信功能，建议手动进行一次这个操作！"
 
 message_interaction.desc:0 "写一封信"
 message_interaction:0 "写信"
 votc_message_title:0 "写信给 [recipient.GetShortUINamePossessive]"
 votc_message_desc:0 " "
+votc_message_tooltip:0 "如果消息显示不全，可以查看对应的信件宝物。"
 message_text:0 "VOTC:LETTER/;/中文/;/[GetPlayer.GetLocalizedText( 'votc_message_text' )]/;/[GetGlobalVariable('votc_letter_num').GetFlagName]/"
+send_message:0 "发送"
+
+#每个信件线程对应的标题
 votc_huixin_title1:0 "[GetGlobalVariable('message_second_scope_letter_1').Char.GetTitledFirstName]的回信"
 votc_huixin_title2:0 "[GetGlobalVariable('message_second_scope_letter_2').Char.GetTitledFirstName]的回信"
 votc_huixin_title3:0 "[GetGlobalVariable('message_second_scope_letter_3').Char.GetTitledFirstName]的回信"
+votc_huixin_title4:0 "[GetGlobalVariable('message_second_scope_letter_4').Char.GetTitledFirstName]的回信"
+votc_huixin_title5:0 "[GetGlobalVariable('message_second_scope_letter_5').Char.GetTitledFirstName]的回信"
+votc_huixin_title6:0 "[GetGlobalVariable('message_second_scope_letter_6').Char.GetTitledFirstName]的回信"
+votc_huixin_title7:0 "[GetGlobalVariable('message_second_scope_letter_7').Char.GetTitledFirstName]的回信"
+votc_huixin_title8:0 "[GetGlobalVariable('message_second_scope_letter_8').Char.GetTitledFirstName]的回信"
+votc_huixin_title9:0 "[GetGlobalVariable('message_second_scope_letter_9').Char.GetTitledFirstName]的回信"
 
 
-votc_letter_full:0 "信件线程已写满"
+
+
+votc_letter_full:0 "信件线程已写满(3/3)"
 
 event_window_widget_message_write_prompt:0 "输入信件内容"
 

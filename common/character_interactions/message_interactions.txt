@@ -22,9 +22,15 @@ message_interaction = {
 				exists = global_var:votc_letter_1
 				exists = global_var:votc_letter_2
 				exists = global_var:votc_letter_3
+				exists = global_var:votc_letter_4
+				exists = global_var:votc_letter_5
+				exists = global_var:votc_letter_6
+				exists = global_var:votc_letter_7
+				exists = global_var:votc_letter_8
+				exists = global_var:votc_letter_9
 				}
-			}
-        }
+        	}
+		}
 	}
 
 
