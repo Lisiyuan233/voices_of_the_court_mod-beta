@@ -1,25 +1,49 @@
+create_artifact = {
+	name = votc_huixin_title4
+	description = ""
+	type = miscellaneous
+	visuals = scroll
+	creator = global_var:message_second_scope_letter_4 
+						}
+create_artifact	创建一件新宝物并将其加入指定角色的物品栏	
+注意：我们隐式地使用了当前作用域。相关配置位于 common/artifacts/visuals
+name = 动态描述 - 宝物名称
+description = 动态描述 - 宝物描述
+rarity = 枚举 - 宝物稀有度，例如 legendary
+type = 标记 - 物品栏槽位类型，例如 trinket
+modifier = 静态修正 - 作用于佩戴该宝物的角色
+durability = 脚本值 - 新耐久度，默认即为最大值
+max_durability = 脚本值 - 可选。最大耐久度值，会覆盖 defines 中的默认值
+decaying = yes/no - 可选。是否随时间衰减，默认 yes
+history = 宝物历史条目 - 自定义历史条目，例如表明该宝物由非所有者重铸
+   type = 宝物历史条目类型 - 可用类型：
+    created_before_history
+    created
+    discovered
+    claimed_by_house
+    given
+    stolen
+    inherited
+    conquest
+    taken_in_siege
+    taken_in_battle
+    won_in_duel
+    reforged
+template = 宝物脚本模板 - 带触发器与修正的脚本基础模板
+visuals = 宝物视觉类型 - 宝物在视觉上的呈现方式
+generate_history = 布尔值 - 若未手动编写历史，是否自动生成新历史条目？
+quality = 脚本值 - 新品质，用于 AI 评分
+wealth = 脚本值 - 新财富值，用于 AI 评分
+creator = 角色作用域 - 设置宝物的自定义创建者（默认是所有者）
+visuals_source = 含领地头衔、家族或王朝的作用域 - 设置宝物纹章图形的来源
+（仅少数宝物模型使用，最典型的是旗帜）
+ save_scope_as = 新宝物 - 可选方式，获取新建宝物的引用
+title_history = 头衔 - 将指定头衔的历史条目加入宝物历史
+title_history_date = 游戏日期 - 从该日期起复制指定头衔的历史条目
+creator = 角色作用域 - 设置宝物的自定义创建者（默认是所有者）
+
 输入框
-			editbox_standard_with_label = {
-				margin = { 30 0 }
 
-				layoutpolicy_horizontal = expanding
-				layoutpolicy_vertical = expanding
-
-				blockoverride "editbox_label"
-				{
-					text = "MESSAGE_SETTINGS_WINDOW_CUSTOM_MESSAGE_EDIT_DESC"
-				}
-
-				blockoverride "editbox_properties" 
-				{
-					name = "custom_message"
-
-					multiline = yes
-
-					text = "[CustomMessageWindow.GetDescription]"
-					ontextedited = "[CustomMessageWindow.OnEditDescription]"
-				}
-			}
 
 
 多个信件管理
