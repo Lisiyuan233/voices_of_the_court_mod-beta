@@ -50,3 +50,32 @@ votc_cabinet_decision_effect:0 "You will hold a council meeting"
 not_enough_cabinet_member:0 "At least 2 council members must be in the same location as you"
 votc_chinese_empire_cabinet_decision_desc:0 "You will hold a central council meeting"
 votc_cabinet_decision:0 "Council Meeting"
+
+votc_relaese_letter_decision:0 "VOTC Release Letter Thread"
+votc_relaese_letter_decision_desc:0 "Release the current letter thread awaiting a reply"
+votc_relaese_letter_decision_tooltip:0 "Release Letter Thread"
+votc_relaese_letter_decision_confirm:0 "Release Letter Thread"
+votc_relaese_letter_decision_effect_desc:0 "You will release the current letter thread awaiting a reply. This action allows you to bypass the letter process counter and will most likely overwrite any previous replies not yet received. If you used the letter-writing function without the backend program running, it is recommended to manually perform this operation once!"
+
+message_interaction.desc:0 "Write a Letter"
+message_interaction:0 "Write Letter"
+votc_message_title:0 "Write to [recipient.GetShortUINamePossessive]"
+votc_message_desc:0 " "
+votc_message_tooltip:0 "If the message is incomplete, check the corresponding letter artifact."
+message_text:0 "VOTC:LETTER/;/English/;/[GetPlayer.GetLocalizedText( 'votc_message_text' )]/;/[GetGlobalVariable('votc_letter_num').GetFlagName]/"
+send_message:0 "Send"
+
+# Titles for each letter thread
+votc_huixin_title1:0 "Reply from [GetGlobalVariable('message_second_scope_letter_1').Char.GetTitledFirstName]"
+votc_huixin_title2:0 "Reply from [GetGlobalVariable('message_second_scope_letter_2').Char.GetTitledFirstName]"
+votc_huixin_title3:0 "Reply from [GetGlobalVariable('message_second_scope_letter_3').Char.GetTitledFirstName]"
+votc_huixin_title4:0 "Reply from [GetGlobalVariable('message_second_scope_letter_4').Char.GetTitledFirstName]"
+votc_huixin_title5:0 "Reply from [GetGlobalVariable('message_second_scope_letter_5').Char.GetTitledFirstName]"
+votc_huixin_title6:0 "Reply from [GetGlobalVariable('message_second_scope_letter_6').Char.GetTitledFirstName]"
+votc_huixin_title7:0 "Reply from [GetGlobalVariable('message_second_scope_letter_7').Char.GetTitledFirstName]"
+votc_huixin_title8:0 "Reply from [GetGlobalVariable('message_second_scope_letter_8').Char.GetTitledFirstName]"
+votc_huixin_title9:0 "Reply from [GetGlobalVariable('message_second_scope_letter_9').Char.GetTitledFirstName]"
+
+votc_letter_full:0 "Letter thread full (9/9)"
+
+event_window_widget_message_write_prompt:0 "Enter letter content"
