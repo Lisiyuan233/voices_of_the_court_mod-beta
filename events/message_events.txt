@@ -12,7 +12,7 @@ message_event.360 = {
 	#orphan = yes
 
 	widget = {
-		gui = "event_window_widget_enter_text"
+		gui = "event_window_widget_message_write"
 		container = "dynamic_birth_name"
 		controller = {
 			type = text
@@ -35,11 +35,87 @@ message_event.360 = {
 			name = message_second_scope
 			value = scope:recipient
 		}
+		#测试距离计算
+		set_global_variable = {
+			name = votc_letter_distance
+			value = votc_letter_delay
+		}
+		debug_log = "VOTC:LETTER 延迟[GetGlobalVariable('votc_letter_distance').GetValue]天"
+
+		#if/else根据变量情况设置递送线程
+		if = {
+			limit = { 
+				not = { exists = global_var:votc_letter_1 }
+			}
+			set_global_variable = votc_letter_1
+			set_global_variable = {
+				name = votc_letter_num
+				value = flag:letter_1
+			}
+			set_global_variable = {
+				name = message_second_scope_letter_1
+				value = scope:recipient
+			}
+			debug_log = "VOTC:LETTER设置为线程votc_letter_1，延迟[votc_letter_delay.GetValue]天接收"
+			scope:actor = {
+				trigger_event = {
+					id = message_event.3621
+					days = votc_letter_delay
+				}
+			}
+			
+		}
+		else_if = {
+			limit = { 
+				not = { exists = global_var:votc_letter_2 }
+			}
+			# 当变量letter2不存在时，设置letter2为当前线程
+			set_global_variable = votc_letter_2
+			set_global_variable = {
+				name = votc_letter_num
+				value = flag:letter_2
+			}
+			set_global_variable = {
+				name = message_second_scope_letter_2
+				value = scope:recipient
+			}
+			debug_log = "VOTC:LETTER设置为线程votc_letter_2"
+			scope:actor = {
+				trigger_event = {
+					id = message_event.3622
+					days = votc_letter_delay
+				}
+			}	
+		}
+		else = {
+			limit = { 
+				not = { exists = global_var:votc_letter_3 }
+			}
+			# 当变量letter3不存在时，设置letter3为当前线程
+			set_global_variable = votc_letter_3
+			set_global_variable = {
+				name = votc_letter_num
+				value = flag:letter_3
+			}
+			set_global_variable = {
+				name = message_second_scope_letter_3
+				value = scope:recipient
+			}
+			debug_log = "VOTC:LETTER设置为线程votc_letter_3"	
+			scope:actor = {
+				trigger_event = {
+					id = message_event.3623
+					days = votc_letter_delay
+				}
+			}	
+		}
+
 		scope:recipient = {
 			log_gamedata = {}
 		}
 		trigger_event = {
 			id = message_event.361
+			#设置延迟给debuglog和后端程序反应时间，否则会出现读取debuglog失败或错误的情况
 			days = 1
 		}
 	}
@@ -52,6 +128,7 @@ message_event.360 = {
 	}
 }
 
+#剪切板事件，用于通知后端程序开始处理信件消息
 message_event.361 = {
 	type = character_event
 	title = "aha"
@@ -63,13 +140,36 @@ message_event.361 = {
     }
 }
 
-message_event.362 = {
+#用于接收不同线程的消息 运行控制台命令run letter1/2/3.txt
+message_event.3621 = {
 	type = character_event
 	title = "aha"
 	theme = realm
 	desc = message_event.362.desc
 	widget = {
-        gui = "event_window_widget_message"
+        gui = "event_window_widget_message_1"
+        container = "custom_widgets_container"
+    }
+}
+
+message_event.3622 = {
+	type = character_event
+	title = "aha"
+	theme = realm
+	desc = message_event.362.desc
+	widget = {
+        gui = "event_window_widget_message_2"
+        container = "custom_widgets_container"
+    }
+}
+
+message_event.3623 = {
+	type = character_event
+	title = "aha"
+	theme = realm
+	desc = message_event.362.desc
+	widget = {
+        gui = "event_window_widget_message_3"
         container = "custom_widgets_container"
     }
 }

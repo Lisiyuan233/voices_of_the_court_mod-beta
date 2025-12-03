@@ -1,3 +1,78 @@
+输入框
+			editbox_standard_with_label = {
+				margin = { 30 0 }
+
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = expanding
+
+				blockoverride "editbox_label"
+				{
+					text = "MESSAGE_SETTINGS_WINDOW_CUSTOM_MESSAGE_EDIT_DESC"
+				}
+
+				blockoverride "editbox_properties" 
+				{
+					name = "custom_message"
+
+					multiline = yes
+
+					text = "[CustomMessageWindow.GetDescription]"
+					ontextedited = "[CustomMessageWindow.OnEditDescription]"
+				}
+			}
+
+
+多个信件管理
+设置两个变量，一个变量组用于识别递送线程是否占用，一个变量用于存储当前线程的信件编号
+
+set_global_variable = votc_letter_1
+set_global_variable = votc_letter_2
+set_global_variable = votc_letter_3
+    	
+		#当变量letter1不存在时，设置letter1为当前线程
+if = {
+    limit = { 
+		not = {exists = var:votc_letter_1 }
+		}
+		set_global_variable = votc_letter_1
+		set_global_variable = {
+			name = votc_letter_num
+			value = flag:letter_1
+			}
+}
+else if = {
+    limit = { 
+		not = {exists = var:votc_letter_2 }
+		}
+    # 当变量letter2不存在时，设置letter2为当前线程
+		set_global_variable = votc_letter_2
+		set_global_variable = {
+			name = votc_letter_num
+			value = flag:letter_2
+			}
+}
+else = {
+    limit = { 
+		not = {exists = var:votc_letter_3 }
+		}
+    # 当变量letter3不存在时，设置letter3为当前线程
+		set_global_variable = votc_letter_3
+		set_global_variable = {
+			name = votc_letter_num
+			value = flag:letter_3
+			}
+}
+
+
+
+
+			set_global_variable = {
+				name = votc_letter_num
+				value = flag:letter_1
+			}
+		remove_variable = test_saved_text
+
+
 [ROOT.Char.GetLocalizedText( 'story_cycle_dog_name' )]
 储存文本
 debug.360 = {

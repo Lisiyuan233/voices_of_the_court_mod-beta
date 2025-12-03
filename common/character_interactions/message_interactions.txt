@@ -6,9 +6,25 @@ message_interaction = {
 	common_interaction = yes
 	desc = message_interaction.desc
 	icon = send_poem_interaction
-
+    use_diplomatic_range = {
+        always = no
+    }
 	ai_will_do = {
 		base = 0
+	}
+	
+	is_valid_showing_failures_only = {
+		custom_tooltip = {
+			text = votc_letter_full	
+			not = {
+				and =
+				{
+				exists = global_var:votc_letter_1
+				exists = global_var:votc_letter_2
+				exists = global_var:votc_letter_3
+				}
+			}
+        }
 	}
 
 
@@ -19,16 +35,7 @@ message_interaction = {
 		debug_log = "发送消息"
 	}
 	
-	on_accept = {
-			scope:actor = {
-				trigger_event = {
-			id = message_event.362
-			days = 100
-			}
-				}
-			debug_log = "接受消息"
-		
-	}
+
 
 	auto_accept = yes
 	

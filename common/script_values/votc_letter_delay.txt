@@ -1,0 +1,107 @@
+# 信件延迟时间，根据距离计算，单位为天，取整
+
+votc_letter_delay = {
+	if = {
+		limit = {
+			votc_squared_distance_value >= 70000000
+		}
+		# 来回需要4年以上
+		value = 1600 
+
+	}
+	else_if = {
+		limit = {
+			votc_squared_distance_value >= 39325442
+		}
+		# 直线距离1万公里左右，来回需要3年
+		value = 1400
+	}
+	else_if = {
+		limit = {
+			votc_squared_distance_value >= 22940480
+		}
+		# 直线距离8000公里左右，来回需要2年
+		value = 1100
+	}
+	else_if = {
+		limit = {
+			votc_squared_distance_value >= 10735029
+		}
+		# 直线距离6000公里左右，来回需要2年		
+		value = 800
+	}
+	else_if = {
+		limit = {
+			votc_squared_distance_value >= squared_distance_monstrous
+		}
+		# 3000公里，需要1年
+		value = 600
+	}
+	else_if = {
+		limit = {
+			votc_squared_distance_value >= squared_distance_mega
+		}
+		# 2282公里，需要1年
+		value = 380
+	}
+	else_if = {
+		limit = {
+			votc_squared_distance_value >= squared_distance_massive
+		}
+		# 1550公里，需要1年
+		value = 260
+	}
+	else_if = {
+		limit = {
+			votc_squared_distance_value >= squared_distance_almost_massive
+		}
+		# 1200公里，需要半年
+		value = 200
+	}	
+	else_if = {
+		limit = {
+			votc_squared_distance_value >= squared_distance_huge
+		}
+		# 850公里，需要5个月
+		value = 120
+	}
+	else_if = {
+		limit = {
+			votc_squared_distance_value >= squared_distance_large
+		}
+		# 650公里，需要4个月
+		value = 110
+	}
+	else_if = {
+		limit = {
+			votc_squared_distance_value >= squared_distance_major
+		}
+		# 460公里，需要3个月
+		value = 110
+	}
+	else_if = {
+		limit = {
+			votc_squared_distance_value >= squared_distance_medium
+		}
+		# 250公里，需要2个月
+		value = 110
+	}
+	else_if = {
+		limit = {
+			votc_squared_distance_value >= squared_distance_small
+		}
+		# 150公里，需要1个月
+		value = 60
+	}
+	else = {
+		# 近距离，最低30天，防止模型还没生成回复
+		value = 30
+	}
+	min = 30
+}
+
+votc_squared_distance_value = {
+	value = "scope:recipient.location.squared_distance(scope:actor.location)"
+}
+
+

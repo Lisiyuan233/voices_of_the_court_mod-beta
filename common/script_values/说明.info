@@ -1,0 +1,122 @@
+脚本值是可以在几乎所有接受数字（在某些情况下也接受布尔值）的脚本中引用的简单或复杂值。
+
+它们主要有两种变体：简单静态值和公式。
+
+== 静态值 ==
+静态值的定义方式如下：
+name_of_scripted_value = value（例如，"minor_stress_gain = 10"）
+
+它们在脚本中通过名称引用：
+add_stress = minor_stress_gain
+
+== 公式 ==
+对于更复杂的值，可以定义数学公式。这些允许你使用当前作用域中可用的一切。
+使用这些公式时要小心，因为它们每次被求值时都必须重新计算。复杂的公式可能会占用大量性能。
+公式不适用于布尔值。
+
+公式使用花括号声明，遵循以下格式：
+
+name_of_scripted_value = {
+    # 数学运算
+    add = number/scripted value/scope.something
+    subtract = ...
+    multiply = ...
+    divide = ... # 注意不要除以 0
+    modulo = ...
+    
+    value = ... # 将值设置为此数字
+    
+    max = ... # 如果当前值更高，则将值设置为此数字。例如，"max = 10" 会使数字 15 变成 10
+    min = ... # 如果当前值更低，则将值设置为此数字
+    
+    round = yes # 四舍五入到最接近的整数
+    ceiling = yes # 向上取整（向正无穷大方向）
+    floor = yes # 向下取整（向负无穷大方向）
+    
+    if = { # 如果满足限制条件，则执行这些操作。你也可以在 "if" 内嵌套 "if"
+        limit = { some conditions }
+        add = 5
+        divide = ...
+        ...
+    }
+    else_if = { # 如果上面的 "if" 不满足，只要满足限制条件，就会执行这些操作。你可以连续使用多个 "else_if"
+        limit = { some conditions }
+        operations...
+    }
+    else = { # 如果上面的 "if" 或 "else_if" 都不满足，则执行这些操作
+        operations...
+    }
+    
+    fixed_range = { # 在范围内生成一个随机的固定点数字（例如，1.242）
+        min = ... script value
+        max = ...
+    }
+    
+    integer_range = { # 在范围内生成一个随机的整数（例如，1）
+        min = ...
+        max = ...
+    }
+}
+
+=== 执行顺序 ===
+操作按定义的顺序执行。
+示例：
+value = {
+    add = 5
+    multiply = 4
+    max = 10
+    add = 5
+}
+结果将是 "15"，因为 "max = 10" 会在最后一个 "add = 5" 之前应用
+
+=== 内联 ===
+公式可以在任何脚本值可用的地方内联编写。因此，如果一个公式只需要使用一次，则无需命名并将其放在 scriptvalues 文件夹中。
+
+示例：
+add_gold = {
+    value = gold
+    multiply = { # 是的，你甚至可以在数学运算符中内联它们
+        value = 1
+        multiply = 0.5
+    }
+}
+
+=== 链式引用 ===
+你可以使用作用域链式引用命名的脚本公式。例如，如果你定义了这个公式：
+    example_age = {
+        value = age
+    }
+那么以下代码将有效：
+add_gold = {
+    value = mother.example_age
+}
+
+== 范围 ==
+脚本值也可以定义范围。
+例如，add_gold = { 1 5 } 将添加 1 到 5 之间的金币。
+add_gold = { named_value another_named_value } 将解析命名值（包括公式）。
+请注意，你不能在范围内内联公式。例如，你不能这样做：add_gold = { { value = 1 add = 2 } some_named_value }。如果你需要这种功能，请使用脚本数学系统中的 integer_range 或 fixed_range。
+
+== 列表 ==
+脚本值支持列表。
+例如，add_gold = { every_child = { add = 1 } } 将根据你拥有的子女数量添加相应的金币。
+所有列表都应该有效，包括在脚本中定义的列表。
+
+有序列表也有效。例如：
+add_gold = {
+    ordered_child = {
+        order_by = age
+        max = 3
+        add = age
+    }
+}
+
+== 作用域 ==
+你可以在脚本值中像在常规脚本中一样更改作用域。
+示例：
+add_gold = {
+    father = {
+        any_child = { add = 1 }
+    }
+}
+这将根据你父亲拥有的子女数量添加相应的金币。

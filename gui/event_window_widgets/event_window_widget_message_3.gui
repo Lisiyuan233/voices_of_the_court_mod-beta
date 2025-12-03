@@ -1,0 +1,21 @@
+##用于接收消息 运行控制台命令run letter.txt
+
+hbox = {
+	name = "event_window_widget_message_3"
+	layoutpolicy_horizontal = expanding
+	margin = { 10 0 }
+
+
+
+	state = {
+        name = widget_show
+        trigger_on_create = yes
+
+		on_start = "[ExecuteConsoleCommand('run letter3.txt')]"
+
+
+	}
+
+
+	expand = {}
+} 

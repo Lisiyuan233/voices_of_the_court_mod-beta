@@ -49,3 +49,21 @@ votc_conversation_history_decision = {
 
 	ai_check_interval = 0
 }
+
+votc_relaese_letter_decision = {
+	decision_group_type = debug
+
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
+	}
+
+	
+	effect = {
+		custom_tooltip = votc_relaese_letter_decision_effect_desc
+		remove_global_variable= votc_letter_1
+		remove_global_variable= votc_letter_2
+		remove_global_variable= votc_letter_3
+	}
+
+	ai_check_interval = 0
+}
