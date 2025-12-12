@@ -80,7 +80,7 @@ talk_event.1001.exit:0 "我不想和$talk_herhim$谈话."
 
 talk_window_end:0 "结束对话"
 
-conversation_opinion:0 "创建对话"
+conversation_opinion:0 "近期对话"
 
 not_in_same_province:0 "我们不在同一个省"
 
@@ -101,7 +101,7 @@ votc_family_decision_tooltip:0 "家族会议"  # 从决策列表中选中决策�
 votc_family_decision_desc:0 "召开一场家族会议，所有与你在同一地点的家族成员都会参加"
 votc_family_decision_confirm:0 "召开家族会议"
 votc_family_decision_effect:0 "你将召开一场家族会议"
-famliy_member_too_much:0 "家族成员过多（大于20）"
+famliy_member_too_much:0 "同一地点的家族成员过少或过多（小于2或大于20）"
 
 votc_cabinet_decision_tooltip:0 "内阁会议" 
 votc_cabinet_decision_desc:0 "召开一场内阁会议，所有与你在同一地点的内阁成员都会参加"
