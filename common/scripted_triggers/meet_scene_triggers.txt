@@ -17,10 +17,17 @@
 can_meet_in_iron_throne = {
 	AND = {
 		scope:actor.location = scope:recipient.location
-		scope:actor = {is_imprisoned = no}
-		scope:recipient = {is_imprisoned = no}
-		scope:actor.location = { has_building = "building_iron_throne" }.
-	}
+		or = {
+			scope:actor = {
+				is_imprisoned = no
+				has_title = title:e_the_iron_throne
+				}
+			scope:recipient = {
+				is_imprisoned = no
+				has_title = title:e_the_iron_throne
+				}
+			}
+		}
 }
 
 #在灵隐寺见面
