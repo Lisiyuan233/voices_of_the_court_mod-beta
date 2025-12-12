@@ -126,7 +126,30 @@ talk_background = {
 #			}
 #		}
 #		
-#		reference = "scenes/"scene_name".dds"		
+#		reference = "scenes/"scene_name".dds"
+
+	#东方酒馆
+	texture = {
+		trigger = {		
+			OR = {
+				global_var:talk_scene = flag:talk_scene_tavern_east
+				global_var:meet_scene = flag:meet_scene_tavern_east
+			}
+		}
+		
+		reference = "scenes/tavern_east.dds"
+	}
+	
+	environment = {
+		trigger = {		
+			OR = {
+				global_var:talk_scene = flag:talk_scene_tavern_east
+				global_var:meet_scene = flag:meet_scene_tavern_east
+			}
+		}
+		
+		reference = "environment_event_tavern"
+	}		
 #	}
 #	
 #	environment = {

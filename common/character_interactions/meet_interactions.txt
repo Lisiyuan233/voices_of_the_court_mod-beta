@@ -59,6 +59,17 @@ ckms_meet_interaction = {
 		#		}
 		#}
 
+		#在东方酒馆
+		if = {
+		limit = {
+			scope:meet_scene_tavern_east = yes
+		}
+		set_global_variable = {
+			name = meet_scene
+			value = flag:meet_scene_tavern_east
+		}
+	}
+
 		#在酒馆
 		if = {
 		limit = {

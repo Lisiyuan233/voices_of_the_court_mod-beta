@@ -42,6 +42,17 @@ talk_interaction = {
 	#		}
 	#	}
 
+		#在东方酒馆
+		if = {
+		limit = {
+			scope:talk_scene_tavern_east = yes
+		}
+		set_global_variable = {
+			name = talk_scene
+			value = flag:talk_scene_tavern_east
+		}
+	}
+
 		#在酒馆
 		if = {
 		limit = {

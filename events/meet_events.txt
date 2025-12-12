@@ -29,6 +29,18 @@ ckms_meet_event.1001 = {
 #		trigger_event = talk_event.9001
 #	}
 
+	#在东方酒馆
+	option ={
+		name = meet_scene_tavern_east_string
+		trigger = {can_meet_in_tavern_east = yes}
+		
+			set_global_variable = {
+				name = meet_scene
+				value = flag:meet_scene_tavern_east
+			}
+		trigger_event = talk_event.9001
+	}
+
 	#在酒馆
 	option ={
 		name = meet_scene_tavern_string
