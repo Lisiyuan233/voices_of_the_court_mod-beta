@@ -40,6 +40,17 @@ mcc_interaction = {
 	#	}
 	#}
 
+	#在market
+	if = {
+		limit = {
+			scope:talk_scene_market = yes
+		}
+		set_global_variable = {
+			name = talk_scene
+			value = flag:talk_scene_market
+		}
+	}
+
 	#在酒馆
 	if = {
 		limit = {
@@ -331,6 +342,7 @@ mcc_interaction = {
 					#在此段注释的下方添加_代码块2
 				#代码块2示例
 				#scope:talk_scene_"sence_name" = yes
+				scope:talk_scene_market = yes
 				scope:talk_scene_tavern = yes
 				scope:talk_scene_tavern_east = yes
 				scope:talk_scene_iron_throne = yes
@@ -396,6 +408,12 @@ mcc_interaction = {
 	#	flag = talk_scene_"sence_name"
 	#	localization = talk_scene_"sence_name"_string
 	#}
+	#在market
+	send_option = {
+		is_shown = {can_talk_in_market = yes}
+		flag = talk_scene_market
+		localization = talk_scene_market_string
+	}
 	#在酒馆
 	send_option = {
 		is_shown = {can_talk_in_tavern = yes}

@@ -140,6 +140,29 @@ talk_background = {
 #		reference = "environment_event_garden"		
 #	}
 
+	#在market
+	texture = {
+		trigger = {		
+			OR = {
+				global_var:talk_scene = flag:talk_scene_market
+				global_var:meet_scene = flag:meet_scene_market
+			}
+		}
+		
+		reference = "scenes/market.dds"		
+	}
+	
+	environment = {
+		trigger = {		
+			OR = {
+				global_var:talk_scene = flag:talk_scene_market
+				global_var:meet_scene = flag:meet_scene_market
+			}
+		}
+		
+		reference = "environment_event_garden"		
+	}
+
 	#在酒馆
 	texture = {
 		trigger = {		

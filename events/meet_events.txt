@@ -29,6 +29,18 @@ ckms_meet_event.1001 = {
 #		trigger_event = talk_event.9001
 #	}
 
+	#在market
+	option ={
+		name = meet_scene_market_string
+		trigger = {can_meet_in_market = yes}
+		
+			set_global_variable = {
+				name = meet_scene
+				value = flag:meet_scene_market
+			}
+		trigger_event = talk_event.9001
+	}
+
 	#在tavern_east
 	option ={
 		name = meet_scene_tavern_east_string
