@@ -1,4 +1,4 @@
-﻿namespace = invite_to_talk_event
+namespace = invite_to_talk_event
 
 invite_to_talk_event.1002 = {
 	immediate = { 
@@ -139,6 +139,20 @@ invite_to_talk_event.1003 = {
 #		}
 #		trigger_event = talk_event.9001
 #	}
+
+	#在铁王座
+	option ={
+		name = talk_scene_iron_throne_string
+		
+		
+		trigger = {can_talk_in_iron_throne = yes}
+		
+		set_global_variable = {
+			name = talk_scene
+			value = flag:talk_scene_iron_throne
+		}
+		trigger_event = talk_event.9001
+	}
 
 	#在灵隐寺
 	option ={

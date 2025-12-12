@@ -1,4 +1,4 @@
-﻿talk_interaction = {
+talk_interaction = {
 	category = interaction_category_friendly
 	use_diplomatic_range = yes
 	ignores_pending_interaction_block = yes
@@ -41,6 +41,16 @@
 	#			value = flag:talk_scene_"sence_name"
 	#		}
 	#	}
+
+		if = {
+		limit = {
+			scope:talk_scene_iron_throne = yes
+		}
+		set_global_variable = {
+			name = talk_scene
+			value = flag:talk_scene_iron_throne
+		}
+	}
 	#在灵隐寺
 	if = {
 		limit = {
@@ -298,6 +308,7 @@
 				OR = {
 					#在此段注释的下方添加_代码块8
 					#代码块8示例scope:talk_scene_"sence_name" = yes
+					scope:talk_scene_iron_throne = yes
 					scope:talk_scene_lingyinsi = yes
 					scope:talk_scene_throneroom_japan = yes
 					scope:talk_scene_shaolinsi = yes
@@ -358,6 +369,12 @@
 	#	flag = talk_scene_"sence_name"
 	#	localization = talk_scene_"sence_name"_string
 	#}
+	#在铁王座
+	send_option = {
+		is_shown = {can_talk_in_iron_throne = yes}
+		flag = talk_scene_iron_throne
+		localization = talk_scene_iron_throne_string
+	}
 	#在灵隐寺
 	send_option = {
 		is_shown = {can_talk_in_lingyinsi = yes}

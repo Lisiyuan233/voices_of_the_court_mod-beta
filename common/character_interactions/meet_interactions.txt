@@ -1,4 +1,4 @@
-﻿
+
 
 
 
@@ -58,6 +58,16 @@ ckms_meet_interaction = {
 		#			value = flag:meet_scene_"sence_name"
 		#		}
 		#}
+
+		if = {
+		limit = {
+			scope:meet_scene_iron_throne = yes
+		}
+		set_global_variable = {
+			name = meet_scene
+			value = flag:meet_scene_iron_throne
+		}
+	}
 		#在灵隐寺
 		if = {
 			limit = {
@@ -316,6 +326,7 @@ ckms_meet_interaction = {
 					#在此段注释的下方添加_代码块5
 				#代码块5示例
 				#scope:meet_scene_"sence_name" = yes
+				scope:meet_scene_iron_throne = yes
 				scope:meet_scene_lingyinsi = yes
 				scope:meet_scene_throneroom_japan = yes
 				scope:meet_scene_shaolinsi = yes
@@ -378,6 +389,12 @@ ckms_meet_interaction = {
 	#	flag = meet_scene_"sence_name"
 	#	localization = meet_scene_"sence_name"_string
 	#}
+	#在铁王座
+	send_option = {
+		is_shown = {can_meet_in_iron_throne = yes}
+		flag = meet_scene_iron_throne
+		localization = meet_scene_iron_throne_string
+	}
 	#在灵隐寺
 	send_option = {
 		is_shown = {can_meet_in_lingyinsi = yes}

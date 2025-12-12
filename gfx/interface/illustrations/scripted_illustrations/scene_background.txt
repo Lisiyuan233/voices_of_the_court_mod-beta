@@ -1,4 +1,4 @@
-﻿#datacontext is the talking partner, use the 'talk_first_scope' global variable to scope the player
+#datacontext is the talking partner, use the 'talk_first_scope' global variable to scope the player
 talk_background = {
 	##########################################
 	#家族会议
@@ -132,6 +132,35 @@ talk_background = {
 #	environment = {
 #		trigger = {		
 #			OR = {
+#				global_var:talk_scene = flag:talk_scene_"scene_name"
+#				global_var:meet_scene = flag:meet_scene_"scene_name"
+#			}
+#		}
+#		
+#		reference = "environment_event_garden"		
+#	}
+
+	texture = {
+		trigger = {		
+			OR = {
+				global_var:talk_scene = flag:talk_scene_iron_throne
+				global_var:meet_scene = flag:meet_scene_iron_throne
+			}
+		}
+		
+		reference = "scenes/iron_throne.dds"		
+	}
+	
+	environment = {
+		trigger = {		
+			OR = {
+				global_var:talk_scene = flag:talk_scene_iron_throne
+				global_var:meet_scene = flag:meet_scene_iron_throne
+			}
+		}
+		
+		reference = "environment_event_garden"		
+	}
 #				global_var:talk_scene = flag:talk_scene_"scene_name"
 #				global_var:meet_scene = flag:meet_scene_"scene_name"
 #			}

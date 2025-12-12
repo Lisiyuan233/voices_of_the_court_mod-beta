@@ -1,4 +1,4 @@
-﻿
+
 namespace = mcc_event
 
 ## EVENTS BELOW ARE NEW ONES FOR MULTICHAR CONVOS
@@ -25,6 +25,17 @@ mcc_event.1001 = {
 	#		}
 	#	trigger_event = talk_event.9001
 	#}
+
+	#在铁王座
+	option ={
+		name = talk_scene_iron_throne_string
+		trigger = {can_talk_in_iron_throne = yes}
+			set_global_variable = {
+				name = talk_scene
+				value = flag:talk_scene_iron_throne
+			}
+		trigger_event = talk_event.9001
+	}
 
 	#在灵隐寺
 	option ={

@@ -1,4 +1,4 @@
-﻿#these triggers check if the player can talk with the character in the given scenes. they are used in the character interaction, and in the travel arrival event.
+#these triggers check if the player can talk with the character in the given scenes. they are used in the character interaction, and in the travel arrival event.
 
 #在此段注释的下方添加_代码块11
 #代码块11示例
@@ -10,6 +10,16 @@
 #		scope:actor.location = { has_building = "building_name" }
 #	}
 #}
+
+#在铁王座见面
+can_talk_in_iron_throne = {
+	AND = {
+		scope:actor.location = scope:recipient.location
+		scope:actor = {is_imprisoned = no}
+		scope:recipient = {is_imprisoned = no}
+		scope:actor.location = { has_building = "building_iron_throne" }
+	}
+}
 
 #在灵隐寺见面
 can_talk_in_lingyinsi = {
