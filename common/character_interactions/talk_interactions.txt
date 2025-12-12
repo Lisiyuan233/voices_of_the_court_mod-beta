@@ -42,17 +42,6 @@ talk_interaction = {
 	#		}
 	#	}
 
-		#在东方酒馆
-		if = {
-		limit = {
-			scope:talk_scene_tavern_east = yes
-		}
-		set_global_variable = {
-			name = talk_scene
-			value = flag:talk_scene_tavern_east
-		}
-	}
-
 		#在酒馆
 		if = {
 		limit = {
@@ -61,6 +50,17 @@ talk_interaction = {
 		set_global_variable = {
 			name = talk_scene
 			value = flag:talk_scene_tavern
+		}
+	}
+
+	#在tavern_east
+	if = {
+		limit = {
+			scope:talk_scene_tavern_east = yes
+		}
+		set_global_variable = {
+			name = talk_scene
+			value = flag:talk_scene_tavern_east
 		}
 	}
 
@@ -331,6 +331,7 @@ talk_interaction = {
 					#在此段注释的下方添加_代码块8
 					#代码块8示例scope:talk_scene_"sence_name" = yes
 					scope:talk_scene_tavern = yes
+					scope:talk_scene_tavern_east = yes
 					scope:talk_scene_iron_throne = yes
 					scope:talk_scene_lingyinsi = yes
 					scope:talk_scene_throneroom_japan = yes
@@ -397,6 +398,12 @@ talk_interaction = {
 		is_shown = {can_talk_in_tavern = yes}
 		flag = talk_scene_tavern
 		localization = talk_scene_tavern_string
+	}
+	#在tavern_east
+	send_option = {
+		is_shown = {can_talk_in_tavern_east = yes}
+		flag = talk_scene_tavern_east
+		localization = talk_scene_tavern_east_string
 	}
 	#在铁王座
 	send_option = {

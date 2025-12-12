@@ -59,17 +59,6 @@ ckms_meet_interaction = {
 		#		}
 		#}
 
-		#在东方酒馆
-		if = {
-		limit = {
-			scope:meet_scene_tavern_east = yes
-		}
-		set_global_variable = {
-			name = meet_scene
-			value = flag:meet_scene_tavern_east
-		}
-	}
-
 		#在酒馆
 		if = {
 		limit = {
@@ -78,6 +67,17 @@ ckms_meet_interaction = {
 		set_global_variable = {
 			name = meet_scene
 			value = flag:meet_scene_tavern
+		}
+	}
+
+	#在tavern_east
+	if = {
+		limit = {
+			scope:meet_scene_tavern_east = yes
+		}
+		set_global_variable = {
+			name = meet_scene
+			value = flag:meet_scene_tavern_east
 		}
 	}
 
@@ -349,6 +349,7 @@ ckms_meet_interaction = {
 				#代码块5示例
 				#scope:meet_scene_"sence_name" = yes
 				scope:meet_scene_tavern = yes
+				scope:meet_scene_tavern_east = yes
 				scope:meet_scene_iron_throne = yes
 				scope:meet_scene_lingyinsi = yes
 				scope:meet_scene_throneroom_japan = yes
@@ -417,6 +418,12 @@ ckms_meet_interaction = {
 		is_shown = {can_meet_in_tavern = yes}
 		flag = meet_scene_tavern
 		localization = meet_scene_tavern_string
+	}
+	#在中国酒馆
+	send_option = {
+		is_shown = {can_meet_in_tavern_east = yes}
+		flag = meet_scene_tavern_east
+		localization = meet_scene_tavern_east_string
 	}
 	#在铁王座
 	send_option = {

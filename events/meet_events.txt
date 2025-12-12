@@ -29,7 +29,7 @@ ckms_meet_event.1001 = {
 #		trigger_event = talk_event.9001
 #	}
 
-	#在东方酒馆
+	#在tavern_east
 	option ={
 		name = meet_scene_tavern_east_string
 		trigger = {can_meet_in_tavern_east = yes}

@@ -140,20 +140,6 @@ invite_to_talk_event.1003 = {
 #		trigger_event = talk_event.9001
 #	}
 
-	#在东方酒馆
-	option ={
-		name = talk_scene_tavern_east_string
-		
-		
-		trigger = {can_talk_in_tavern_east = yes}
-		
-		set_global_variable = {
-			name = talk_scene
-			value = flag:talk_scene_tavern_east
-		}
-		trigger_event = talk_event.9001
-	}
-
 	#在酒馆
 	option ={
 		name = talk_scene_tavern_string
@@ -166,6 +152,21 @@ invite_to_talk_event.1003 = {
 			value = flag:talk_scene_tavern
 		}
 		trigger_event = talk_event.9001
+	}
+
+	#在tavern_east
+	option ={
+		name = talk_scene_tavern_east_string
+		
+		
+		trigger = {can_talk_in_tavern_east = yes}
+		
+		set_global_variable = {
+			name = talk_scene
+			value = flag:talk_scene_tavern_east
+		}
+		trigger_event = talk_event.9001
+	}
 	}
 
 	#在铁王座
