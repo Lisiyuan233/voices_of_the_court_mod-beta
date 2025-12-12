@@ -1,4 +1,4 @@
-votc_bookmark_decision1 = {
+﻿votc_bookmark_decision1 = {
 	decision_group_type = debug
 
 	picture = {

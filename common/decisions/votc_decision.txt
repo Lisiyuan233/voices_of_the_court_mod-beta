@@ -1,4 +1,4 @@
-
+﻿
 #内阁会议决策
 votc_cabinet_decision = { 
  # 决策的核心定义结构，"my_decision"为决策的唯一标识（键名）

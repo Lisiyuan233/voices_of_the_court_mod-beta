@@ -1,4 +1,4 @@
-
+﻿
 hmd_on_action = {
 	effect = {
 		log_hmd_playergamedata = yes

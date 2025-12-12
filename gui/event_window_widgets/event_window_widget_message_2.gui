@@ -1,4 +1,4 @@
-##用于接收消息 运行控制台命令run letter.txt
+﻿##用于接收消息 运行控制台命令run letter.txt
 
 hbox = {
 	name = "event_window_widget_message_2"

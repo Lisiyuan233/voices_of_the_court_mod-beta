@@ -1,4 +1,4 @@
-log_hmd_playergamedata = {
+﻿log_hmd_playergamedata = {
 	debug_log = "VOTC:BOOKMARK/;/hmd_start"
 	debug_log = "VOTC:BOOKMARK/;/hmd_gameinfo_head_start"
 	debug_log = "VOTC:BOOKMARK/;/time/;/[GetCurrentDate.GetStringShort]/;/[GetCurrentDate.GetStringLong]"

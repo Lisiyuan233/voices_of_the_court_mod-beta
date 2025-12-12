@@ -1,4 +1,4 @@
-#datacontext is the talking partner, use the 'talk_first_scope' global variable to scope the player
+﻿#datacontext is the talking partner, use the 'talk_first_scope' global variable to scope the player
 talk_background = {
 	##########################################
 	#家族会议

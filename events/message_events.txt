@@ -1,4 +1,4 @@
-namespace = message_event
+﻿namespace = message_event
 
 #写信事件，用于输入文本
 message_event.360 = {

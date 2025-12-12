@@ -1,4 +1,4 @@
-talk_interaction = {
+﻿talk_interaction = {
 	category = interaction_category_friendly
 	use_diplomatic_range = yes
 	ignores_pending_interaction_block = yes

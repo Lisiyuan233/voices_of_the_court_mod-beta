@@ -1,4 +1,4 @@
-#用于接收votc回信消息弹窗
+﻿#用于接收votc回信消息弹窗
 votc_message_feed = {
 	display = feed
 	title = event_message_title

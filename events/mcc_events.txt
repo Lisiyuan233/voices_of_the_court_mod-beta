@@ -1,4 +1,4 @@
-
+﻿
 namespace = mcc_event
 
 ## EVENTS BELOW ARE NEW ONES FOR MULTICHAR CONVOS

@@ -1,4 +1,4 @@
-namespace = hmd_event
+﻿namespace = hmd_event
 
 hmd_event.9003 = {
 	type = character_event

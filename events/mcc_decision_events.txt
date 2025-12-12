@@ -1,4 +1,4 @@
-namespace = mcc_decision_event
+﻿namespace = mcc_decision_event
 
 #家族会议
 mcc_decision_event.9011 = {
