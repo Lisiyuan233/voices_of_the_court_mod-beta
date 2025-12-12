@@ -211,7 +211,7 @@ can_talk_in_throneroom_east_fuya = {
 			scope:recipient = {is_courtier_of = scope:actor.location.province_owner}
 			scope:recipient = scope:actor.location.province_owner
 		}
-		scope:actor = {is_landless_ruler = no}
+		#scope:actor = {is_landless_ruler = no}
 		scope:recipient = {highest_held_title_tier >= tier_county}
 		scope:recipient = {highest_held_title_tier <= tier_duchy}
 		scope:recipient.culture = { has_coa_gfx = chinese_group_coa_gfx }
@@ -226,13 +226,13 @@ can_talk_in_throneroom_east_fuya = {
 can_talk_in_throneroom_east_empire = {
 	AND = {
 		OR = {
-			scope:actor = {is_landless_ruler = no}
-			OR = {
+			#scope:actor = {is_landless_ruler = no}
+			#OR = {
 				scope:recipient = {is_courtier_of = scope:actor.location.province_owner}
 				scope:recipient = scope:actor.location.province_owner
 			}
 			
-		}
+		#}
 		scope:recipient = {highest_held_title_tier >= tier_empire}
 		scope:recipient.culture = { has_coa_gfx = chinese_group_coa_gfx }
 		scope:actor.location = scope:recipient.location
@@ -293,11 +293,11 @@ can_talk_in_garden = {
 		scope:recipient = {is_imprisoned = no}
 
 		OR = {
-			scope:actor = {is_landless_ruler = no}
-			OR = {
+			#scope:actor = {is_landless_ruler = no}
+			#OR = {
 				scope:recipient = {is_courtier_of = scope:actor.location.province_owner}
 				scope:recipient = scope:actor.location.province_owner
-			}
+			#}
 			
 		}		
 	}
