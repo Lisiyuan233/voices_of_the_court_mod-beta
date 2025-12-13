@@ -140,6 +140,29 @@ talk_background = {
 #		reference = "environment_event_garden"		
 #	}
 
+	#在中国市场
+	texture = {
+		trigger = {		
+			OR = {
+				global_var:talk_scene = flag:talk_scene_market_east
+				global_var:meet_scene = flag:meet_scene_market_east
+			}
+		}
+		
+		reference = "scenes_Vanilla/market_east.dds"		
+	}
+	
+	environment = {
+		trigger = {		
+			OR = {
+				global_var:talk_scene = flag:talk_scene_market_east
+				global_var:meet_scene = flag:meet_scene_market_east
+			}
+		}
+		
+		reference = "environment_event_garden"		
+	}
+
 	#在market
 	texture = {
 		trigger = {		
@@ -149,7 +172,7 @@ talk_background = {
 			}
 		}
 		
-		reference = "scenes/market.dds"		
+		reference = "scenes_Vanilla/market_west.dds"		
 	}
 	
 	environment = {
@@ -172,7 +195,7 @@ talk_background = {
 			}
 		}
 		
-		reference = "scenes/tavern.dds"		
+		reference = "scenes_Vanilla/tavern.dds"		
 	}
 	
 	environment = {
@@ -195,7 +218,7 @@ talk_background = {
 			}
 		}
 		
-		reference = "scenes/tavern_east.dds"		
+		reference = "scenes_Vanilla/tgp_tavern_asia.dds"		
 	}
 	
 	environment = {

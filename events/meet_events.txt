@@ -29,6 +29,20 @@ ckms_meet_event.1001 = {
 #		trigger_event = talk_event.9001
 #	}
 
+	#在中国市场
+	option ={
+		name = meet_scene_market_east_string
+		trigger = {can_meet_in_market_east = yes}
+		
+			set_global_variable = {
+				name = meet_scene
+				value = flag:meet_scene_market_east
+			}
+		trigger_event = talk_event.9001
+	}
+
+	#在market
+
 	#在market
 	option ={
 		name = meet_scene_market_string

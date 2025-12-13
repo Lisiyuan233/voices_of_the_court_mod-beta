@@ -13,6 +13,20 @@
 #	}
 #}
 
+#在中国市场见面
+can_meet_in_market_east = {
+	AND = {
+		scope:actor = {is_imprisoned = no}
+		scope:recipient = {is_imprisoned = no}
+		scope:actor.location.culture = { has_coa_gfx = chinese_group_coa_gfx }
+		or = {
+			scope:actor.location = { has_building_or_higher = castle_01 }
+			scope:actor.location = { has_building_or_higher = city_01 }
+			scope:actor.location = { has_building_or_higher = temple_01 }
+		}
+	}
+}
+
 #在market见面
 can_meet_in_market = {
 	AND = {
@@ -213,8 +227,10 @@ can_meet_in_bedchamber_east1 = {
 		scope:actor = {is_imprisoned = no}
 		scope:recipient = {is_imprisoned = no}
 		scope:actor.culture = { has_coa_gfx = chinese_group_coa_gfx }
-		scope:actor = {
-			primary_partner = scope:recipient
+		OR = {
+			scope:actor = {primary_partner = scope:recipient}
+			scope:recipient = {primary_partner = scope:actor}
+			scope:recipient = {is_concubine_of = scope:actor}
 		}
 	}
 }

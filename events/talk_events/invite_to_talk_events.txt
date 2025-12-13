@@ -17,8 +17,8 @@ invite_to_talk_event.1003 = {
 		character = scope:recipient
 	}
 	
-#增加
-#1
+	#增加
+	#1
 	option ={
 		name = talk_scene_throneroom_east_empire_string
 		
@@ -31,7 +31,7 @@ invite_to_talk_event.1003 = {
 		
 		trigger_event = talk_event.9001	
 	}
-#2
+	#2
 	option ={
 		name = talk_scene_throneroom_east_empire1_string
 		
@@ -44,7 +44,7 @@ invite_to_talk_event.1003 = {
 		
 		trigger_event = talk_event.9001	
 	}
-#3
+	#3
 	option ={
 		name = talk_scene_throneroom_east_fuya_string
 		
@@ -57,7 +57,7 @@ invite_to_talk_event.1003 = {
 		
 		trigger_event = talk_event.9001	
 	}
-#4
+	#4
 	option ={
 		name = talk_scene_throneroom_east_fuya1_string
 		
@@ -70,7 +70,7 @@ invite_to_talk_event.1003 = {
 		
 		trigger_event = talk_event.9001	
 	}
-#5
+	#5
 	option ={
 		name = talk_scene_garden_east1_string
 		
@@ -84,7 +84,7 @@ invite_to_talk_event.1003 = {
 		trigger_event = talk_event.9001
 	}
 
-#6
+	#6
 	option ={
 		name = talk_scene_bedchamber_east1_string
 		
@@ -97,7 +97,7 @@ invite_to_talk_event.1003 = {
 		}
 		trigger_event = talk_event.9001
 	}
-#7
+	#7
 	option ={
 		name = talk_scene_huanghelou_string
 		
@@ -111,7 +111,7 @@ invite_to_talk_event.1003 = {
 		trigger_event = talk_event.9001
 	}
 
-#云冈石窟
+	#云冈石窟
 	option ={
 		name = talk_scene_yungangshiku_string
 		
@@ -139,6 +139,20 @@ invite_to_talk_event.1003 = {
 #		}
 #		trigger_event = talk_event.9001
 #	}
+
+	#在中国市场
+	option ={
+		name = talk_scene_market_east_string
+		
+		
+		trigger = {can_talk_in_market_east = yes}
+		
+		set_global_variable = {
+			name = talk_scene
+			value = flag:talk_scene_market_east
+		}
+		trigger_event = talk_event.9001
+	}
 
 	#在market
 	option ={
@@ -181,7 +195,7 @@ invite_to_talk_event.1003 = {
 		}
 		trigger_event = talk_event.9001
 	}
-	}
+	
 
 	#在铁王座
 	option ={

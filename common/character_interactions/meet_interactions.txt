@@ -59,6 +59,17 @@ ckms_meet_interaction = {
 		#		}
 		#}
 
+		#在中国市场
+		if = {
+		limit = {
+			scope:meet_scene_market_east = yes
+		}
+		set_global_variable = {
+			name = meet_scene
+			value = flag:meet_scene_market_east
+		}
+	}
+
 		#在market
 		if = {
 		limit = {
@@ -359,6 +370,7 @@ ckms_meet_interaction = {
 					#在此段注释的下方添加_代码块5
 				#代码块5示例
 				#scope:meet_scene_"sence_name" = yes
+				scope:meet_scene_market_east = yes
 				scope:meet_scene_market = yes
 				scope:meet_scene_tavern = yes
 				scope:meet_scene_tavern_east = yes
@@ -425,6 +437,12 @@ ckms_meet_interaction = {
 	#	flag = meet_scene_"sence_name"
 	#	localization = meet_scene_"sence_name"_string
 	#}
+	#在中国市场
+	send_option = {
+		is_shown = {can_meet_in_market_east = yes}
+		flag = meet_scene_market_east
+		localization = meet_scene_market_east_string
+	}
 	#在market
 	send_option = {
 		is_shown = {can_meet_in_market = yes}

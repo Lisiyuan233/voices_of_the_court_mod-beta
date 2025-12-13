@@ -42,6 +42,17 @@ talk_interaction = {
 	#		}
 	#	}
 
+		#在中国市场
+		if = {
+		limit = {
+			scope:talk_scene_market_east = yes
+		}
+		set_global_variable = {
+			name = talk_scene
+			value = flag:talk_scene_market_east
+		}
+	}
+
 		#在market
 		if = {
 		limit = {
@@ -341,6 +352,7 @@ talk_interaction = {
 				OR = {
 					#在此段注释的下方添加_代码块8
 					#代码块8示例scope:talk_scene_"sence_name" = yes
+					scope:talk_scene_market_east = yes
 					scope:talk_scene_market = yes
 					scope:talk_scene_tavern = yes
 					scope:talk_scene_tavern_east = yes
@@ -405,6 +417,12 @@ talk_interaction = {
 	#	flag = talk_scene_"sence_name"
 	#	localization = talk_scene_"sence_name"_string
 	#}
+	#在中国市场
+	send_option = {
+		is_shown = {can_talk_in_market_east = yes}
+		flag = talk_scene_market_east
+		localization = talk_scene_market_east_string
+	}
 	#在market
 	send_option = {
 		is_shown = {can_talk_in_market = yes}
