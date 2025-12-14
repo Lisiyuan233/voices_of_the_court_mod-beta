@@ -5,6 +5,76 @@ talk_interaction.desc:0 "Initiate a conversation"
 
 talk_herhim:0 "[recipient.GetHerHim]"
 
+talk_scene_market_east_string:0 "Meet at the market"
+meet_scene_market_east_string:0 "Meet at the market"
+
+talk_scene_market_string:0 "Meet at the market"
+meet_scene_market_string:0 "Meet at the market"
+
+talk_scene_tavern_string:0 "Meet at the tavern"
+meet_scene_tavern_string:0 "Meet at the tavern"
+
+talk_scene_tavern_east_string:0 "Meet at the tavern"
+meet_scene_tavern_east_string:0 "Meet at the tavern"
+
+talk_scene_iron_throne_string:0 "Meet at the Iron Throne"
+meet_scene_iron_throne_string:0 "Meet at the Iron Throne"
+
+talk_scene_lingyinsi_string:0 "Meet at Lingyin Temple"
+meet_scene_lingyinsi_string:0 "Meet at Lingyin Temple"
+
+talk_scene_throneroom_japan_string:0 "Meet at Heian Palace"
+meet_scene_throneroom_japan_string:0 "Meet at Heian Palace"
+
+talk_scene_shaolinsi_string:0 "Meet at Shaolin Temple"
+meet_scene_shaolinsi_string:0 "Meet at Shaolin Temple"
+
+talk_scene_wudangshandaoguan_string:0 "Meet at Wudang Mountain Temple"
+meet_scene_wudangshandaoguan_string:0 "Meet at Wudang Mountain Temple"
+
+talk_scene_leshandafou_string:0 "Meet at Leshan Giant Buddha"
+meet_scene_leshandafou_string:0 "Meet at Leshan Giant Buddha"
+
+talk_scene_taishan_string:0 "Meet at Mount Tai"
+meet_scene_taishan_string:0 "Meet at Mount Tai"
+
+talk_scene_wulingyuan_string:0 "Meet at Wulingyuan"
+meet_scene_wulingyuan_string:0 "Meet at Wulingyuan"
+
+talk_scene_kaifenghuangcheng_string:0 "Meet at Kaifeng Imperial Palace"
+meet_scene_kaifenghuangcheng_string:0 "Meet at Kaifeng Imperial Palace"
+
+talk_scene_tengwangge_string:0 "Meet at Tengwang Pavilion"
+meet_scene_tengwangge_string:0 "Meet at Tengwang Pavilion"
+
+meet_scene_yueyanglou_string:0 "Meet at Yueyang Tower"
+meet_scene_huanghelou_string:0 "Meet at Yellow Crane Tower"
+meet_scene_yungangshiku_string:0 "Meet at Yungang Grottoes"
+meet_scene_bedchamber_east1_string:0 "Meet in the bedchamber"
+meet_scene_garden_east1_string:0 "Meet in the Imperial Garden"
+meet_scene_throneroom_east_fuya1_string:0 "Receive at the yamen"
+meet_scene_throneroom_east_fuya_string:0 "Audience at the yamen"
+meet_scene_throneroom_east_empire_string:0 "Audience at the Imperial Palace"
+meet_scene_throneroom_east_empire1_string:0 "Summon at the Imperial Palace"
+meet_scene_throneroom_string:0 "Meet in the throneroom"
+meet_scene_garden_string:0 "Meet in the garden"
+meet_scene_bedchamber_string:0 "Meet in the bedchamber"
+meet_scene_dungeon_string:0 "Meet in the dungeon"
+meet_scene_feast_string:0 "Meet at the feast"
+meet_scene_armycamp_string:0 "Meet at the army camp"
+meet_scene_hunt_string:0 "Meet during the hunt"
+meet_scene_alley_string:0 "Meet in the town alley"
+
+talk_scene_yueyanglou_string:0 "Meet at Yueyang Tower"
+talk_scene_huanghelou_string:0 "Meet at Yellow Crane Tower"
+talk_scene_yungangshiku_string:0 "Meet at Yungang Grottoes"
+talk_scene_bedchamber_east1_string:0 "Meet in the bedchamber"
+talk_scene_garden_east1_string:0 "Meet in the Imperial Garden"
+talk_scene_throneroom_east_fuya1_string:0 "Receive at the yamen"
+talk_scene_throneroom_east_fuya_string:0 "Audience at the yamen"
+talk_scene_throneroom_east_empire_string:0 "Audience at the Imperial Palace"
+talk_scene_throneroom_east_empire1_string:0 "Summon at the Imperial Palace"
+
 talk_scene_throneroom_string:0 "Meet in the throneroom"
 talk_scene_garden_string:0 "Meet in the garden"
 talk_scene_bedchamber_string:0 "Meet in the bedchamber"
